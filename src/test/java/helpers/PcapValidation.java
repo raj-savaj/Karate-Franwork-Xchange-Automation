@@ -1,6 +1,7 @@
 package helpers;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 
 import com.jcraft.jsch.Channel;
@@ -9,6 +10,8 @@ import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 
+import config.configApplication;
+
 public class PcapValidation {
 
     private JSch jsch;
@@ -16,12 +19,16 @@ public class PcapValidation {
     private Channel channel;
     private Thread thread = null;
 
+    private static String ssh_ip= configApplication.getGlobalValue("ipAddress");
+    private static String ssh_username= configApplication.getGlobalValue("sshUsername");
+    private static String ssh_password= configApplication.getGlobalValue("sshPassword");
+
     public PcapValidation(){
         jsch = new JSch();
         try {
-            System.out.println("PcapValidation class executed");
-            session = jsch.getSession("haudsysops", "192.168.20.22",22);
-            session.setPassword("haudsysops");
+            System.out.println("PcapValidation class loaded");
+            session = jsch.getSession(ssh_username, ssh_ip ,22);
+            session.setPassword(ssh_password);
             session.setConfig("StrictHostKeyChecking", "no");
         } catch (JSchException e) {
             e.printStackTrace();
@@ -30,7 +37,7 @@ public class PcapValidation {
     }
     
     public void startPcapReading() {
-        System.out.println("startPcapReading method running.");
+        System.out.println("startPcapWriting method running.");
     	thread = new Thread(new Runnable() {
 			public void run() {
 				connectChanel();
@@ -39,8 +46,42 @@ public class PcapValidation {
 		thread.start();
     }
     
+    public String readPcapFile(){
+        StringBuilder str = new StringBuilder();
+        try {
+            jsch = new JSch();
+            session = jsch.getSession(ssh_username, ssh_ip ,22);
+            session.setPassword(ssh_password);
+            session.setConfig("StrictHostKeyChecking", "no");
+
+            session.connect();
+            channel=session.openChannel("exec");
+            ((ChannelExec) channel).setPty(true);
+            ((ChannelExec)channel).setCommand("tshark -r test_real.pcap -Y 'smpp.command_id==0x00000004 || smpp.command_id==0x00000005'");
+            channel.setInputStream(null);
+            ((ChannelExec)channel).setErrStream(System.err);
+            InputStream in=channel.getInputStream();
+            channel.connect();
+            byte[] tmp=new byte[1024];
+            while(true){
+                while(in.available()>0){
+                    int i=in.read(tmp, 0, 1024);
+                    if(i<0)break;
+                    str.append(new String(tmp, 0, i));
+                }
+                if(channel.isClosed()){
+                    break;
+                }
+            }
+        } catch (JSchException  | IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(str.toString());
+        return str.toString();
+    }
+
     public void stopPcapReading() {
-        System.out.println("stopPcapReading method running.");
+        System.out.println("stopPcapWriting method running.");
     	if (thread != null) {
     		closeChannel();
 			thread.interrupt();
@@ -53,11 +94,11 @@ public class PcapValidation {
             session.connect();
             channel=session.openChannel("exec");
             ((ChannelExec) channel).setPty(true);
-            ((ChannelExec)channel).setCommand("sudo -S -p '' tcpdump -i any -w test121.pcap");
+            ((ChannelExec)channel).setCommand("sudo -S -p '' tcpdump -i any -w test_real.pcap");
             ((ChannelExec)channel).setErrStream(System.err);
             OutputStream out=channel.getOutputStream();
             channel.connect();
-            out.write("haudsysops\n".getBytes());
+            out.write(String.format("%s\n", ssh_password).getBytes());
             out.flush();
             System.out.println("Thread successfully started.");
         } catch (JSchException  | IOException e) {

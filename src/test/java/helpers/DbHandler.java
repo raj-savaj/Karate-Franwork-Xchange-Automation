@@ -5,13 +5,14 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import config.configApplication;
 import net.minidev.json.JSONObject;
 
 public class DbHandler {
     
-    private static String connectionUrl = "jdbc:postgresql://192.168.20.22:5432/xchange?currentSchema=management_service";
-    private static String userName = "admin";
-    private static String passWord = "simon";
+    private static String connectionUrl = configApplication.getGlobalValue("dbUrl");
+    private static String userName = configApplication.getGlobalValue("dbUsername");
+    private static String passWord = configApplication.getGlobalValue("dbPassword");
 
     public static JSONObject getCountryCount(){
         JSONObject json = new JSONObject();
