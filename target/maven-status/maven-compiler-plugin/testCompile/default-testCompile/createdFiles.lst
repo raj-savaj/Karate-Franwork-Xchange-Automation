@@ -4,3 +4,4 @@ helpers\PcapValidation$1.class
 helpers\DbHandler.class
 helpers\RedisHandler.class
 helpers\PcapValidation.class
+config\configApplication.class
