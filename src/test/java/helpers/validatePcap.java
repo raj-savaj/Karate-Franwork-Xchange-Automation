@@ -12,7 +12,7 @@ import com.jcraft.jsch.Session;
 
 import config.configApplication;
 
-public class PcapValidation {
+public class validatePcap {
 
     private JSch jsch;
     private Session session;
@@ -23,7 +23,7 @@ public class PcapValidation {
     private static String ssh_username= configApplication.getGlobalValue("sshUsername");
     private static String ssh_password= configApplication.getGlobalValue("sshPassword");
 
-    public PcapValidation(){
+    public validatePcap(){
         jsch = new JSch();
         try {
             System.out.println("PcapValidation class loaded");
@@ -36,17 +36,17 @@ public class PcapValidation {
        
     }
     
-    public void startPcapReading() {
+    public void startPcapWriting(String filename) {
         System.out.println("startPcapWriting method running.");
     	thread = new Thread(new Runnable() {
 			public void run() {
-				connectChanel();
+				connectChanel(filename);
 			}
 		});
 		thread.start();
     }
     
-    public String readPcapFile(){
+    public String readPcapFile(String filename, String filter){
         StringBuilder str = new StringBuilder();
         try {
             jsch = new JSch();
@@ -57,7 +57,7 @@ public class PcapValidation {
             session.connect();
             channel=session.openChannel("exec");
             ((ChannelExec) channel).setPty(true);
-            ((ChannelExec)channel).setCommand("tshark -r test_real.pcap -Y 'smpp.command_id==0x00000004 || smpp.command_id==0x00000005'");
+            ((ChannelExec)channel).setCommand("tshark -r " + filename + " -Y " + filter);
             channel.setInputStream(null);
             ((ChannelExec)channel).setErrStream(System.err);
             InputStream in=channel.getInputStream();
@@ -76,11 +76,10 @@ public class PcapValidation {
         } catch (JSchException  | IOException e) {
             e.printStackTrace();
         }
-        System.out.println(str.toString());
         return str.toString();
     }
 
-    public void stopPcapReading() {
+    public void stopPcapWriting() {
         System.out.println("stopPcapWriting method running.");
     	if (thread != null) {
     		closeChannel();
@@ -89,12 +88,12 @@ public class PcapValidation {
 		}
     }
     
-    public void connectChanel(){
+    public void connectChanel(String filename){
         try {
             session.connect();
             channel=session.openChannel("exec");
             ((ChannelExec) channel).setPty(true);
-            ((ChannelExec)channel).setCommand("sudo -S -p '' tcpdump -i any -w test_real.pcap");
+            ((ChannelExec)channel).setCommand("sudo -S -p '' tcpdump -i any -w "+filename);
             ((ChannelExec)channel).setErrStream(System.err);
             OutputStream out=channel.getOutputStream();
             channel.connect();

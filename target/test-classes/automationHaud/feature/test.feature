@@ -3,23 +3,15 @@ Feature:
 
 Background:
 * def a = 1
-* def fun = function(){ return {} }
+* def fun = function(){ return { country_id:"" } }
 * def c = callonce fun
 
 Scenario:
-    * assert a == 1
-    * def a = 2
-    * def b = 3
-    * match c == {}
-    * set c.foo = 'bar'
+    * print a 
+    * set c.country_id = 2
     # the callonce in the background is a snapshot at THAT point in time
     # so the next scenario should "rewind" to that state
 
 Scenario:
-    * print "A = " +  karate.get('b', 42)
-    * assert a == 1
-    * assert typeof b == 'undefined'
-    # get else default value
-    * def b = karate.get('b', 42)
-    * match b == 42
-    * match c == {}
+    * print a
+    * print c

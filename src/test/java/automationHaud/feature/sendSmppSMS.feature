@@ -1,15 +1,18 @@
+@smpp_to_http
 @parallel=false
 Feature: Send SMS using SMPP
 
     Background:
         * url sttUrl
-        * def pcapClass = callonce read('classpath:helpers/pcapValidation.feature')
+        * def pcapFilename = 'test_sample_1.pcap'
+        * def pcapClass = callonce read('classpath:helpers/validatePcap.feature')
         * def pcapValidation = pcapClass.pcapValidation
         * def sleep = function(millis){ java.lang.Thread.sleep(millis) }
         * def countPattern = function(text,pattern) { var rgxp = new RegExp(pattern, "gi"); return text.match(rgxp).length; }
         * header Content-Type = 'application/json'
+
     Scenario: Create SMPP supplier
-        * pcapValidation.startPcapReading()
+        * pcapValidation.startPcapWriting(pcapFilename)
         * eval sleep(5000)
         Given path 'create/server'
         * def payloadServer = 
@@ -146,11 +149,23 @@ Feature: Send SMS using SMPP
         And params payloadMessageSubmit
         When method post
         Then status 200
-        * eval sleep(4000)
-        * pcapValidation.stopPcapReading()
+        * eval sleep(10000)
+        * pcapValidation.stopPcapWriting()
 
     
     Scenario: Validate Submit_sm packet count in pcap file   
-        * def pcapData = pcapValidation.readPcapFile()
-        * match 2 == countPattern(pcapData,"Submit_sm")
-            
+        * def filter = "'smpp.command_id==0x00000004 || smpp.command_id==0x00000005'"
+        * def pcapData = pcapValidation.readPcapFile(pcapFilename,filter)
+        * print pcapData
+        * match 1 == countPattern(pcapData,"Submit_sm")
+        * match 1 == countPattern(pcapData,"Deliver_sm")
+		
+	
+	Scenario: Validate DCS, destination_addr and source_addr Value in Submit_sm packet 
+        * def filter = "'smpp.command_id==0x00000004' -T json"
+        * def pcapData = pcapValidation.readPcapFile(pcapFilename,filter)
+        * json jsonVar = pcapData
+        * print jsonVar
+        * match jsonVar[0]._source.layers.smpp["smpp.data_coding"] == '0x00000003'
+        * match jsonVar[0]._source.layers.smpp["smpp.source_addr"] == '35699523380'
+        * match jsonVar[0]._source.layers.smpp["smpp.destination_addr"] == '35699523365'

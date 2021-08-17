@@ -14,13 +14,13 @@ public class DbHandler {
     private static String userName = configApplication.getGlobalValue("dbUsername");
     private static String passWord = configApplication.getGlobalValue("dbPassword");
 
-    public static JSONObject getCountryCount(){
+    public static JSONObject getRowCount(String tableName){
         JSONObject json = new JSONObject();
 
         try(Connection connect = DriverManager.getConnection(connectionUrl,userName,passWord)){
-            ResultSet rs = connect.createStatement().executeQuery("SELECT COUNT(*) as count FROM country");
+            ResultSet rs = connect.createStatement().executeQuery("SELECT COUNT(*) as count FROM "+tableName);
             rs.next();
-            json.put("count", rs.getString("count"));
+            json.put("count",Integer.parseInt( rs.getString("count")));
         } catch (SQLException e){
             e.printStackTrace();
         }

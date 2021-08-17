@@ -1,0 +1,2060 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.automationHaud.feature.dataBase</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-08-17 05:24:49 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Check the country count</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/automationHaud/feature/dataBase.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Work with database</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Check the country count</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>9665</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dbHandler = Java.type(&quot;helpers.DbHandler&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenResponse = callonce read(&#39;classpath:helpers/createToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4027</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">17:24:44.339 &lt;&lt; lock released, cached callonce: read(&#39;classpath:helpers/createToken.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.createToken</div>
+      </div>
+      <div class="time-cell passed">3951</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.3">
+      <div class="step-ref bg-step">3</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.3">17:24:40.346 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:helpers/createToken.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;oauth/token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params {username:#(userName),&quot;password&quot;:#(password),grant_type:&quot;password&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">122</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Basic Y2xpZW50SWQ6c2VjcmV0&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3806</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.7">17:24:43.301 request:
+1 &gt; POST http://192.168.20.22/api/oauth/token?password=Haudsysops123%21&amp;grant_type=password&amp;username=admin.xchange
+1 &gt; Authorization: Basic Y2xpZW50SWQ6c2VjcmV0
+1 &gt; Host: 192.168.20.22
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:24:44.287 response time in milliseconds: 959
+1 &lt; 200
+1 &lt; cache-control: no-store
+1 &lt; pragma: no-cache
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; x-frame-options: DENY
+1 &lt; content-type: application/json;charset=UTF-8
+1 &lt; transfer-encoding: chunked
+1 &lt; date: Tue, 17 Aug 2021 11:54:44 GMT
+{
+  &quot;access_token&quot; : &quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjkyMDE1ODQsInVzZXJfbmFtZSI6ImFkbWluLnhjaGFuZ2UiLCJqdGkiOiI5NjdiY2FjZi05M2M0LTQ1OTAtYTBjYS1lNTdlMGQ5MTdiNDUiLCJhdXRob3JpdGllcyI6WyJUUkFGRklDX01BTkFHRU1FTlQ6V1JJVEUiLCJEQVNIQk9BUkQ6V1JJVEUiLCJTVVBQTElFUl9DT05ORUNUSU9OOlJFQUQiLCJTVEFUSVNUSUM6UkVBRCIsIkNMSUVOVF9DT05ORUNUSU9OOlJFQUQiLCJST1VURV9USU1FQkFTRURfQ09ORElUSU9OOlJFQUQiLCJTVVBQTElFUl9DT01NSVRNRU5UOlJFQUQiLCJURU1QTEFURV9QUklDRV9NQU5BR0VNRU5UOldSSVRFIiwiUU9TOldSSVRFIiwiU1VQUExJRVJfQ09OTkVDVElPTjpXUklURSIsIlRSQUZGSUNfTUFOQUdFTUVOVF9NRVNTQUdFX0RBVEE6UkVBRCIsIkNBVEVHT1JZOldSSVRFIiwiQ0xJRU5UX1BSSUNFX01BTkFHRU1FTlQ6V1JJVEUiLCJTVVBQTElFUl9ERVRBSUxTOlJFQUQiLCJTVVBQTElFUl9ERVRBSUxTOldSSVRFIiwiQ0xJRU5UX0NPTk5FQ1RJT046V1JJVEUiLCJTVVBQTElFUl9SQVRFOlJFQUQiLCJDTElFTlRfV0FMTEVUOlJFQUQiLCJXSElURUxJU1Q6UkVBRCIsIkNMSUVOVF9ERVRBSUxTOlJFQUQiLCJTVEFUSVNUSUM6V1JJVEUiLCJST1VURV9NQU5BR0VNRU5UOlJFQUQiLCJST1VURV9NQU5BR0VNRU5UOldSSVRFIiwiTENSOldSSVRFIiwiV0hJVEVMSVNUOldSSVRFIiwiVVNFUjpSRUFEIiwiU1VQUExJRVJfQ09NTUlUTUVOVDpXUklURSIsIlNVUFBMSUVSX1JBVEU6V1JJVEUiLCJMQ1I6UkVBRCIsIlZJUlRVQUxfTlVNQkVSU19UUkFGRklDX01BTkFHRU1FTlRfTUVTU0FHRV9EQVRBOldSSVRFIiwiQ0xJRU5UX1dBTExFVDpXUklURSIsIkRBU0hCT0FSRDpSRUFEIiwiU1RBVElTVElDU19SRVBPUlRJTkc6V1JJVEUiLCJTVEFUSVNUSUNTX1JFUE9SVElORzpSRUFEIiwiVFJBRkZJQ19NQU5BR0VNRU5UOlJFQUQiLCJDTElFTlRfREVUQUlMUzpXUklURSIsIlJPVVRFX1RJTUVCQVNFRF9DT05ESVRJT046V1JJVEUiLCJURU1QTEFURV9QUklDRV9NQU5BR0VNRU5UOlJFQUQiLCJWSVJUVUFMX05VTUJFUlNfVFJBRkZJQ19NQU5BR0VNRU5UX01FU1NBR0VfREFUQTpSRUFEIiwiQ0FURUdPUlk6UkVBRCIsIkNMSUVOVF9QUklDRV9NQU5BR0VNRU5UOlJFQUQiLCJVU0VSOldSSVRFIiwiUU9TOlJFQUQiLCJUUkFGRklDX01BTkFHRU1FTlRfTUVTU0FHRV9EQVRBOldSSVRFIl0sImNsaWVudF9pZCI6ImNsaWVudElkIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.iyBFuL3W69o74MsJriN8LzDX1EfV-CCJ3oFb-Izx7vdfJIi3-RKJJpJABAtEF6f-PK-LpPo8fuPNJLGI1XYrqfRXTaZYUbszUl5ihOHCJRcySDYCAFsqJVagpx525V07xpG7B2boIKjJov5f90PWua3V8nN9sdoXcj7-dwAFfPHto622TUQr3VMiHDE64jprSWr9e34DhHED6Ppw8Uj0ij-_qHd2QIAe95SKkZGS_Sp6YIU0kWT8Q9HVfwJwchWdFbItgc8FkiDkDZjxEndeeBLbJ9P4Rj27sl-A40tNrx5-A1VsYvcWEGxw_vMJ841BBjJnIXe4oiepECG9ANP_S4-pjOExZ5opnxW_HZRaX8iCxofYS4nUFRcpvFuRexfUV3F39QLPuhA8L8jpabLGZnzW0q8CCAKm-r2zROZLgk6xTTCj_-ev-Sl_7WqYIowOOx5nfZ18olsK5KVnZy9IuXm1XR9LQgqwRvH1HhECoj6X5KP3Olq-MkjDuuBBHWfFYIvfajWUtyMB-G1NKJx8LpLuEdgqReLRelZjkhUF_gR-mcDwFMnbRfWTBFfXnpBShSyU1qL880q8zCOsyiL8LOIftj5xw6Q2a5RjyAoj56hwZA56QP1XBAeClZJugrw31-MQUqwlI1mxAR_6rntj2OCU1It-CoVdaPmwJVuRKec&quot;,
+  &quot;token_type&quot; : &quot;bearer&quot;,
+  &quot;refresh_token&quot; : &quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbi54Y2hhbmdlIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImF0aSI6Ijk2N2JjYWNmLTkzYzQtNDU5MC1hMGNhLWU1N2UwZDkxN2I0NSIsImV4cCI6MTYzMTc5MzI4NCwianRpIjoiZDE4OWUyNTMtYjg4Ni00NDM1LWEyZDktZjM4NmVjMmExZDA2IiwiYXV0aG9yaXRpZXMiOlsiVFJBRkZJQ19NQU5BR0VNRU5UOldSSVRFIiwiREFTSEJPQVJEOldSSVRFIiwiU1VQUExJRVJfQ09OTkVDVElPTjpSRUFEIiwiU1RBVElTVElDOlJFQUQiLCJDTElFTlRfQ09OTkVDVElPTjpSRUFEIiwiUk9VVEVfVElNRUJBU0VEX0NPTkRJVElPTjpSRUFEIiwiU1VQUExJRVJfQ09NTUlUTUVOVDpSRUFEIiwiVEVNUExBVEVfUFJJQ0VfTUFOQUdFTUVOVDpXUklURSIsIlFPUzpXUklURSIsIlNVUFBMSUVSX0NPTk5FQ1RJT046V1JJVEUiLCJUUkFGRklDX01BTkFHRU1FTlRfTUVTU0FHRV9EQVRBOlJFQUQiLCJDQVRFR09SWTpXUklURSIsIkNMSUVOVF9QUklDRV9NQU5BR0VNRU5UOldSSVRFIiwiU1VQUExJRVJfREVUQUlMUzpSRUFEIiwiU1VQUExJRVJfREVUQUlMUzpXUklURSIsIkNMSUVOVF9DT05ORUNUSU9OOldSSVRFIiwiU1VQUExJRVJfUkFURTpSRUFEIiwiQ0xJRU5UX1dBTExFVDpSRUFEIiwiV0hJVEVMSVNUOlJFQUQiLCJDTElFTlRfREVUQUlMUzpSRUFEIiwiU1RBVElTVElDOldSSVRFIiwiUk9VVEVfTUFOQUdFTUVOVDpSRUFEIiwiUk9VVEVfTUFOQUdFTUVOVDpXUklURSIsIkxDUjpXUklURSIsIldISVRFTElTVDpXUklURSIsIlVTRVI6UkVBRCIsIlNVUFBMSUVSX0NPTU1JVE1FTlQ6V1JJVEUiLCJTVVBQTElFUl9SQVRFOldSSVRFIiwiTENSOlJFQUQiLCJWSVJUVUFMX05VTUJFUlNfVFJBRkZJQ19NQU5BR0VNRU5UX01FU1NBR0VfREFUQTpXUklURSIsIkNMSUVOVF9XQUxMRVQ6V1JJVEUiLCJEQVNIQk9BUkQ6UkVBRCIsIlNUQVRJU1RJQ1NfUkVQT1JUSU5HOldSSVRFIiwiU1RBVElTVElDU19SRVBPUlRJTkc6UkVBRCIsIlRSQUZGSUNfTUFOQUdFTUVOVDpSRUFEIiwiQ0xJRU5UX0RFVEFJTFM6V1JJVEUiLCJST1VURV9USU1FQkFTRURfQ09ORElUSU9OOldSSVRFIiwiVEVNUExBVEVfUFJJQ0VfTUFOQUdFTUVOVDpSRUFEIiwiVklSVFVBTF9OVU1CRVJTX1RSQUZGSUNfTUFOQUdFTUVOVF9NRVNTQUdFX0RBVEE6UkVBRCIsIkNBVEVHT1JZOlJFQUQiLCJDTElFTlRfUFJJQ0VfTUFOQUdFTUVOVDpSRUFEIiwiVVNFUjpXUklURSIsIlFPUzpSRUFEIiwiVFJBRkZJQ19NQU5BR0VNRU5UX01FU1NBR0VfREFUQTpXUklURSJdLCJjbGllbnRfaWQiOiJjbGllbnRJZCJ9.XOJ4JUvxr5vNPAGroUUPFfAEtAWtLxCT5UshpfyGldeQQ3yZGYLPUnw-h2hR9DXQ5dxeqReRTYjq7EXb7lYQ_B1Tgnn4VD968HWWR6ySi6EKE6BD7hLkr2CkBX_6HGF9k4Rr1qU2_ntQJifr-bM09HwkWczU5fSLffWGJvsLEDPW04D2IrCOAH0WHY8ioSErtk8DAf2gCq0JK3l89UXUGu89I4_pPdWZwi0FmFU0eUh42dmUQMQkxko0swmyxzLrsgGvRWnqeZjel3EfFUm2vc5gD-4hd0r8tNbXI4ENCU_2cfHvS3Kvmb-s8V6lZQ0iNBkJkpAOpE5DwsRYab_uXeLM6598AtIuKoaKAcjtNj_hvpjGC4ecqchFnvCaag7yN6_X4JbcbqL4qs1vlvCsin2ZES5t599lmPT3uti4F_AXHiQDYXLfBoA0v6I8zkTpT35FzP8pBah8A-aS5R6cewH_8nIEvbTuJTRjYNWjhFARiW_KKLYxImUs8afhod_efEWJH9YLPHSqiyKMb9ZltChW_bJs3vUeY_bCWLkmUml9KYjBo7U7IIljW1LvDnlexHzzTtVWmUFGYQs3BjiGJuSccl4ljKxE8L3qwJ93KdcvNnYa1S6AfY0xySWPCfhzIPJRt2te0_Ju4Ll3YtciVpD_cd9hmus0uh6ZTV2lLbw&quot;,
+  &quot;expires_in&quot; : 299,
+  &quot;scope&quot; : &quot;read write&quot;
+}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenResponse.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;destinations/countries&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">71</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1407</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">17:24:44.442 request:
+1 &gt; GET http://192.168.20.22/api/destinations/countries
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjkyMDE1ODQsInVzZXJfbmFtZSI6ImFkbWluLnhjaGFuZ2UiLCJqdGkiOiI5NjdiY2FjZi05M2M0LTQ1OTAtYTBjYS1lNTdlMGQ5MTdiNDUiLCJhdXRob3JpdGllcyI6WyJUUkFGRklDX01BTkFHRU1FTlQ6V1JJVEUiLCJEQVNIQk9BUkQ6V1JJVEUiLCJTVVBQTElFUl9DT05ORUNUSU9OOlJFQUQiLCJTVEFUSVNUSUM6UkVBRCIsIkNMSUVOVF9DT05ORUNUSU9OOlJFQUQiLCJST1VURV9USU1FQkFTRURfQ09ORElUSU9OOlJFQUQiLCJTVVBQTElFUl9DT01NSVRNRU5UOlJFQUQiLCJURU1QTEFURV9QUklDRV9NQU5BR0VNRU5UOldSSVRFIiwiUU9TOldSSVRFIiwiU1VQUExJRVJfQ09OTkVDVElPTjpXUklURSIsIlRSQUZGSUNfTUFOQUdFTUVOVF9NRVNTQUdFX0RBVEE6UkVBRCIsIkNBVEVHT1JZOldSSVRFIiwiQ0xJRU5UX1BSSUNFX01BTkFHRU1FTlQ6V1JJVEUiLCJTVVBQTElFUl9ERVRBSUxTOlJFQUQiLCJTVVBQTElFUl9ERVRBSUxTOldSSVRFIiwiQ0xJRU5UX0NPTk5FQ1RJT046V1JJVEUiLCJTVVBQTElFUl9SQVRFOlJFQUQiLCJDTElFTlRfV0FMTEVUOlJFQUQiLCJXSElURUxJU1Q6UkVBRCIsIkNMSUVOVF9ERVRBSUxTOlJFQUQiLCJTVEFUSVNUSUM6V1JJVEUiLCJST1VURV9NQU5BR0VNRU5UOlJFQUQiLCJST1VURV9NQU5BR0VNRU5UOldSSVRFIiwiTENSOldSSVRFIiwiV0hJVEVMSVNUOldSSVRFIiwiVVNFUjpSRUFEIiwiU1VQUExJRVJfQ09NTUlUTUVOVDpXUklURSIsIlNVUFBMSUVSX1JBVEU6V1JJVEUiLCJMQ1I6UkVBRCIsIlZJUlRVQUxfTlVNQkVSU19UUkFGRklDX01BTkFHRU1FTlRfTUVTU0FHRV9EQVRBOldSSVRFIiwiQ0xJRU5UX1dBTExFVDpXUklURSIsIkRBU0hCT0FSRDpSRUFEIiwiU1RBVElTVElDU19SRVBPUlRJTkc6V1JJVEUiLCJTVEFUSVNUSUNTX1JFUE9SVElORzpSRUFEIiwiVFJBRkZJQ19NQU5BR0VNRU5UOlJFQUQiLCJDTElFTlRfREVUQUlMUzpXUklURSIsIlJPVVRFX1RJTUVCQVNFRF9DT05ESVRJT046V1JJVEUiLCJURU1QTEFURV9QUklDRV9NQU5BR0VNRU5UOlJFQUQiLCJWSVJUVUFMX05VTUJFUlNfVFJBRkZJQ19NQU5BR0VNRU5UX01FU1NBR0VfREFUQTpSRUFEIiwiQ0FURUdPUlk6UkVBRCIsIkNMSUVOVF9QUklDRV9NQU5BR0VNRU5UOlJFQUQiLCJVU0VSOldSSVRFIiwiUU9TOlJFQUQiLCJUUkFGRklDX01BTkFHRU1FTlRfTUVTU0FHRV9EQVRBOldSSVRFIl0sImNsaWVudF9pZCI6ImNsaWVudElkIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.iyBFuL3W69o74MsJriN8LzDX1EfV-CCJ3oFb-Izx7vdfJIi3-RKJJpJABAtEF6f-PK-LpPo8fuPNJLGI1XYrqfRXTaZYUbszUl5ihOHCJRcySDYCAFsqJVagpx525V07xpG7B2boIKjJov5f90PWua3V8nN9sdoXcj7-dwAFfPHto622TUQr3VMiHDE64jprSWr9e34DhHED6Ppw8Uj0ij-_qHd2QIAe95SKkZGS_Sp6YIU0kWT8Q9HVfwJwchWdFbItgc8FkiDkDZjxEndeeBLbJ9P4Rj27sl-A40tNrx5-A1VsYvcWEGxw_vMJ841BBjJnIXe4oiepECG9ANP_S4-pjOExZ5opnxW_HZRaX8iCxofYS4nUFRcpvFuRexfUV3F39QLPuhA8L8jpabLGZnzW0q8CCAKm-r2zROZLgk6xTTCj_-ev-Sl_7WqYIowOOx5nfZ18olsK5KVnZy9IuXm1XR9LQgqwRvH1HhECoj6X5KP3Olq-MkjDuuBBHWfFYIvfajWUtyMB-G1NKJx8LpLuEdgqReLRelZjkhUF_gR-mcDwFMnbRfWTBFfXnpBShSyU1qL880q8zCOsyiL8LOIftj5xw6Q2a5RjyAoj56hwZA56QP1XBAeClZJugrw31-MQUqwlI1mxAR_6rntj2OCU1It-CoVdaPmwJVuRKec
+1 &gt; Host: 192.168.20.22
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:24:45.807 response time in milliseconds: 967
+1 &lt; 200
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; x-frame-options: DENY
+1 &lt; content-type: application/json
+1 &lt; transfer-encoding: chunked
+1 &lt; date: Tue, 17 Aug 2021 11:54:45 GMT
+1 &lt; Set-Cookie: SESSION=YWMyODNkYzAtZjdhOC00MTU3LTlhYTQtNDg3MTQ2MTk2OGRm; Domain=192.168.20.22
+{
+  &quot;countries&quot; : [ {
+    &quot;mcc&quot; : [ &quot;740&quot; ],
+    &quot;country_id&quot; : &quot;8a790206-0a58-429d-99fa-86991f3f31fc&quot;,
+    &quot;country_name&quot; : &quot;Ecuador&quot;,
+    &quot;iso_code&quot; : &quot;ECU&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;622&quot; ],
+    &quot;country_id&quot; : &quot;2b2ebab8-c1c9-4ad7-95fc-817d2d73f4d5&quot;,
+    &quot;country_name&quot; : &quot;Chad&quot;,
+    &quot;iso_code&quot; : &quot;TCD&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;302&quot; ],
+    &quot;country_id&quot; : &quot;eb989155-4234-4430-9fb7-9aee793a9bd2&quot;,
+    &quot;country_name&quot; : &quot;Canada&quot;,
+    &quot;iso_code&quot; : &quot;CAN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;247&quot; ],
+    &quot;country_id&quot; : &quot;3bfbb3e2-e5a3-4a58-89ed-9a1e451ff10a&quot;,
+    &quot;country_name&quot; : &quot;Latvia&quot;,
+    &quot;iso_code&quot; : &quot;LVA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;641&quot; ],
+    &quot;country_id&quot; : &quot;b4297e93-6bb1-4c85-a1df-bbf993db61fb&quot;,
+    &quot;country_name&quot; : &quot;Uganda&quot;,
+    &quot;iso_code&quot; : &quot;UGA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;636&quot; ],
+    &quot;country_id&quot; : &quot;f0a8fabf-a0ec-4222-82bc-7f993ccf4ed7&quot;,
+    &quot;country_name&quot; : &quot;Ethiopia&quot;,
+    &quot;iso_code&quot; : &quot;ETH&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;643&quot; ],
+    &quot;country_id&quot; : &quot;bda8893d-2781-4afa-a955-aeba2b643e70&quot;,
+    &quot;country_name&quot; : &quot;Mozambique&quot;,
+    &quot;iso_code&quot; : &quot;MOZ&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;456&quot; ],
+    &quot;country_id&quot; : &quot;95ae2636-f9e9-4587-8c5a-197f1f921782&quot;,
+    &quot;country_name&quot; : &quot;Cambodia&quot;,
+    &quot;iso_code&quot; : &quot;KHM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;276&quot; ],
+    &quot;country_id&quot; : &quot;7f05cd91-f131-4493-8428-3b941366a7d4&quot;,
+    &quot;country_name&quot; : &quot;Albania&quot;,
+    &quot;iso_code&quot; : &quot;ALB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;457&quot; ],
+    &quot;country_id&quot; : &quot;8735aa50-7e09-4085-a6df-7e792dbaea9c&quot;,
+    &quot;country_name&quot; : &quot;Laos&quot;,
+    &quot;iso_code&quot; : &quot;LAO&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;402&quot; ],
+    &quot;country_id&quot; : &quot;b7c94396-b92f-4893-9b80-0a5ae3da1937&quot;,
+    &quot;country_name&quot; : &quot;Bhutan&quot;,
+    &quot;iso_code&quot; : &quot;BTN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;514&quot; ],
+    &quot;country_id&quot; : &quot;754e1498-5b6b-4458-ab02-49777af58dbf&quot;,
+    &quot;country_name&quot; : &quot;East Timor&quot;,
+    &quot;iso_code&quot; : &quot;TLS&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;602&quot; ],
+    &quot;country_id&quot; : &quot;0eca1356-be0d-46ff-bff3-6af0633e247c&quot;,
+    &quot;country_name&quot; : &quot;Egypt&quot;,
+    &quot;iso_code&quot; : &quot;EGY&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;401&quot; ],
+    &quot;country_id&quot; : &quot;aa74773b-5515-4ef6-935e-cf16fc31a220&quot;,
+    &quot;country_name&quot; : &quot;Kazakhstan&quot;,
+    &quot;iso_code&quot; : &quot;KAZ&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;645&quot; ],
+    &quot;country_id&quot; : &quot;0aef6edc-bf68-4cd7-87e7-38029a0981ae&quot;,
+    &quot;country_name&quot; : &quot;Zambia&quot;,
+    &quot;iso_code&quot; : &quot;ZMB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;414&quot; ],
+    &quot;country_id&quot; : &quot;d2d10afe-e92c-4668-a382-0b95382acf2f&quot;,
+    &quot;country_name&quot; : &quot;Myanmar&quot;,
+    &quot;iso_code&quot; : &quot;MMR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;420&quot; ],
+    &quot;country_id&quot; : &quot;bf7ad455-b499-44cd-a7e9-91c22caf0031&quot;,
+    &quot;country_name&quot; : &quot;Saudi Arabia&quot;,
+    &quot;iso_code&quot; : &quot;SAU&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;272&quot; ],
+    &quot;country_id&quot; : &quot;9efadba8-6fea-482f-ac3c-e2916b075ef2&quot;,
+    &quot;country_name&quot; : &quot;Ireland&quot;,
+    &quot;iso_code&quot; : &quot;IRL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;555&quot; ],
+    &quot;country_id&quot; : &quot;621e9c81-e27b-4629-947e-33fb7485935e&quot;,
+    &quot;country_name&quot; : &quot;Niue&quot;,
+    &quot;iso_code&quot; : &quot;NIU&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;437&quot; ],
+    &quot;country_id&quot; : &quot;b2693f53-1ac9-4e68-b673-cf97c2ef0cae&quot;,
+    &quot;country_name&quot; : &quot;Kyrgyzstan&quot;,
+    &quot;iso_code&quot; : &quot;KGZ&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;362&quot; ],
+    &quot;country_id&quot; : &quot;7fe52b37-a308-43aa-95ed-6612783a193a&quot;,
+    &quot;country_name&quot; : &quot;Curacao and the Caribbean Netherlands&quot;,
+    &quot;iso_code&quot; : &quot;CUW&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;352&quot; ],
+    &quot;country_id&quot; : &quot;1faa346f-a002-4382-b0fd-71cf6eef04d2&quot;,
+    &quot;country_name&quot; : &quot;Grenada&quot;,
+    &quot;iso_code&quot; : &quot;GRD&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;316&quot;, &quot;311&quot;, &quot;310&quot; ],
+    &quot;country_id&quot; : &quot;d8a99b1a-a55e-4543-9b6a-e2042099e9dd&quot;,
+    &quot;country_name&quot; : &quot;United States of America&quot;,
+    &quot;iso_code&quot; : &quot;USA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;286&quot; ],
+    &quot;country_id&quot; : &quot;cb815b5c-6398-4aa9-80bb-2b559a7b8573&quot;,
+    &quot;country_name&quot; : &quot;Turkey&quot;,
+    &quot;iso_code&quot; : &quot;TUR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;297&quot; ],
+    &quot;country_id&quot; : &quot;f5dd3d3f-ee76-45d5-b4ce-5d976f020aab&quot;,
+    &quot;country_name&quot; : &quot;Montenegro&quot;,
+    &quot;iso_code&quot; : &quot;MNE&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;282&quot; ],
+    &quot;country_id&quot; : &quot;e92fc2b2-e7b4-4e9a-91e1-5f5180d77a35&quot;,
+    &quot;country_name&quot; : &quot;Georgia&quot;,
+    &quot;iso_code&quot; : &quot;GEO&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;230&quot; ],
+    &quot;country_id&quot; : &quot;c22c7a1a-1057-417a-a515-5d1b09d254e4&quot;,
+    &quot;country_name&quot; : &quot;Czech Republic&quot;,
+    &quot;iso_code&quot; : &quot;CZE&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;440&quot; ],
+    &quot;country_id&quot; : &quot;6e87b935-d581-419f-9b9c-0c113a01ac57&quot;,
+    &quot;country_name&quot; : &quot;Japan&quot;,
+    &quot;iso_code&quot; : &quot;JPN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;732&quot; ],
+    &quot;country_id&quot; : &quot;c2ef35df-1be1-4792-92c4-0f1ed545fd97&quot;,
+    &quot;country_name&quot; : &quot;Colombia&quot;,
+    &quot;iso_code&quot; : &quot;COL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;344&quot; ],
+    &quot;country_id&quot; : &quot;828096dd-d186-48cc-bb14-671d3b163a1e&quot;,
+    &quot;country_name&quot; : &quot;Antigua and Barbuda&quot;,
+    &quot;iso_code&quot; : &quot;ATG&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;525&quot; ],
+    &quot;country_id&quot; : &quot;93213dea-8bf0-4a73-bf49-cea7bcfd1dd9&quot;,
+    &quot;country_name&quot; : &quot;Singapore&quot;,
+    &quot;iso_code&quot; : &quot;SGP&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;208&quot; ],
+    &quot;country_id&quot; : &quot;122a92fa-bb20-4392-8962-bfdf35050004&quot;,
+    &quot;country_name&quot; : &quot;France&quot;,
+    &quot;iso_code&quot; : &quot;FRA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;424&quot; ],
+    &quot;country_id&quot; : &quot;de64df3a-528d-465c-8304-9bb114aac339&quot;,
+    &quot;country_name&quot; : &quot;United Arab Emirates&quot;,
+    &quot;iso_code&quot; : &quot;ARE&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;268&quot; ],
+    &quot;country_id&quot; : &quot;37ae8348-cf82-4ad1-8ba1-9ec964a91dbf&quot;,
+    &quot;country_name&quot; : &quot;Portugal&quot;,
+    &quot;iso_code&quot; : &quot;PRT&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;412&quot; ],
+    &quot;country_id&quot; : &quot;dd48aaa4-6c70-487b-8f76-32b5936912e1&quot;,
+    &quot;country_name&quot; : &quot;Afghanistan&quot;,
+    &quot;iso_code&quot; : &quot;AFG&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;358&quot; ],
+    &quot;country_id&quot; : &quot;d2e7617a-7376-4818-aaeb-cd28dd5bba3a&quot;,
+    &quot;country_name&quot; : &quot;Saint Lucia&quot;,
+    &quot;iso_code&quot; : &quot;LCA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;734&quot; ],
+    &quot;country_id&quot; : &quot;b8c6975e-a63b-4823-a9f9-2a4bdaacca46&quot;,
+    &quot;country_name&quot; : &quot;Venezuela&quot;,
+    &quot;iso_code&quot; : &quot;VEN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;421&quot; ],
+    &quot;country_id&quot; : &quot;f193546b-d1a6-4c2f-ba87-1bfe009b6e9f&quot;,
+    &quot;country_name&quot; : &quot;Yemen&quot;,
+    &quot;iso_code&quot; : &quot;YEM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;617&quot; ],
+    &quot;country_id&quot; : &quot;62d977e0-f375-4ac6-b573-9d36120f0763&quot;,
+    &quot;country_name&quot; : &quot;Mauritius&quot;,
+    &quot;iso_code&quot; : &quot;MUS&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;623&quot; ],
+    &quot;country_id&quot; : &quot;d7a69b61-40bf-4dc1-84df-c2a705932281&quot;,
+    &quot;country_name&quot; : &quot;Central African Republic&quot;,
+    &quot;iso_code&quot; : &quot;CAF&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;629&quot; ],
+    &quot;country_id&quot; : &quot;c9968048-df39-4ce0-a0ed-1979f840cc75&quot;,
+    &quot;country_name&quot; : &quot;Congo&quot;,
+    &quot;iso_code&quot; : &quot;COG&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;419&quot; ],
+    &quot;country_id&quot; : &quot;c12373f2-2d46-4083-acd0-81f700f96d81&quot;,
+    &quot;country_name&quot; : &quot;Kuwait&quot;,
+    &quot;iso_code&quot; : &quot;KWT&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;202&quot; ],
+    &quot;country_id&quot; : &quot;54fba17d-e323-493d-9ef0-6dcd1e2f7096&quot;,
+    &quot;country_name&quot; : &quot;Greece&quot;,
+    &quot;iso_code&quot; : &quot;GRC&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;654&quot; ],
+    &quot;country_id&quot; : &quot;341738c9-5f45-40a7-9b75-d5627d4607cc&quot;,
+    &quot;country_name&quot; : &quot;Comoros&quot;,
+    &quot;iso_code&quot; : &quot;COM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;505&quot; ],
+    &quot;country_id&quot; : &quot;5a5ffb40-d3b5-4b07-ada3-413fb594bd1c&quot;,
+    &quot;country_name&quot; : &quot;Australia&quot;,
+    &quot;iso_code&quot; : &quot;AUS&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;712&quot; ],
+    &quot;country_id&quot; : &quot;373a7e09-ff37-469b-910b-c305693a195a&quot;,
+    &quot;country_name&quot; : &quot;Costa Rica&quot;,
+    &quot;iso_code&quot; : &quot;CRI&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;714&quot; ],
+    &quot;country_id&quot; : &quot;ecf4f0f2-32e8-4849-93c8-ce04d67cd118&quot;,
+    &quot;country_name&quot; : &quot;Panama&quot;,
+    &quot;iso_code&quot; : &quot;PAN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;520&quot; ],
+    &quot;country_id&quot; : &quot;04e200cb-1046-4e69-97b2-c677595b024b&quot;,
+    &quot;country_name&quot; : &quot;Thailand&quot;,
+    &quot;iso_code&quot; : &quot;THA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;615&quot; ],
+    &quot;country_id&quot; : &quot;166795ea-4dd3-4dec-a3cb-2df4ecec9f32&quot;,
+    &quot;country_name&quot; : &quot;Togo&quot;,
+    &quot;iso_code&quot; : &quot;TGO&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;652&quot; ],
+    &quot;country_id&quot; : &quot;503d995a-ad0a-4ee4-84ae-9fb05d5f62e0&quot;,
+    &quot;country_name&quot; : &quot;Botswana&quot;,
+    &quot;iso_code&quot; : &quot;BWA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;427&quot; ],
+    &quot;country_id&quot; : &quot;fb56d159-cc9b-4960-98b7-a8e908e541cf&quot;,
+    &quot;country_name&quot; : &quot;Qatar&quot;,
+    &quot;iso_code&quot; : &quot;QAT&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;530&quot; ],
+    &quot;country_id&quot; : &quot;a103c9a7-c119-449d-ad23-0056456464bc&quot;,
+    &quot;country_name&quot; : &quot;New Zealand&quot;,
+    &quot;iso_code&quot; : &quot;TKL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;706&quot; ],
+    &quot;country_id&quot; : &quot;d25a820d-a5e1-4427-80b2-805d15959f6f&quot;,
+    &quot;country_name&quot; : &quot;El Salvador&quot;,
+    &quot;iso_code&quot; : &quot;SLV&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;647&quot; ],
+    &quot;country_id&quot; : &quot;13aeb20b-7704-4540-813d-106e51d7b85c&quot;,
+    &quot;country_name&quot; : &quot;Reunion and Mayotte&quot;,
+    &quot;iso_code&quot; : &quot;REU-MYT&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;214&quot; ],
+    &quot;country_id&quot; : &quot;c3e2e084-c4f4-4a8e-a16a-90c8da205d1b&quot;,
+    &quot;country_name&quot; : &quot;Spain&quot;,
+    &quot;iso_code&quot; : &quot;ESP&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;218&quot; ],
+    &quot;country_id&quot; : &quot;68012ea8-88d5-4314-9757-acaeb0ca9a0f&quot;,
+    &quot;country_name&quot; : &quot;Bosnia and Herzegovina&quot;,
+    &quot;iso_code&quot; : &quot;BIH&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;470&quot; ],
+    &quot;country_id&quot; : &quot;fd0028d3-cba3-457e-9185-4a8e31ed8267&quot;,
+    &quot;country_name&quot; : &quot;Bangladesh&quot;,
+    &quot;iso_code&quot; : &quot;BGD&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;288&quot; ],
+    &quot;country_id&quot; : &quot;a1c865a9-4a8a-40f7-8d0a-887e5057c712&quot;,
+    &quot;country_name&quot; : &quot;Faroe Islands&quot;,
+    &quot;iso_code&quot; : &quot;FRO&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;648&quot; ],
+    &quot;country_id&quot; : &quot;a68544c1-d2ae-4206-837b-78c73cb00d03&quot;,
+    &quot;country_name&quot; : &quot;Zimbabwe&quot;,
+    &quot;iso_code&quot; : &quot;ZWE&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;290&quot; ],
+    &quot;country_id&quot; : &quot;b0fce1a1-ac0a-42f3-9670-5e0987a45b86&quot;,
+    &quot;country_name&quot; : &quot;Greenland&quot;,
+    &quot;iso_code&quot; : &quot;GRL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;537&quot; ],
+    &quot;country_id&quot; : &quot;218772a0-c599-4d67-9b46-d847046a6505&quot;,
+    &quot;country_name&quot; : &quot;Papua New Guinea&quot;,
+    &quot;iso_code&quot; : &quot;PNG&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;330&quot; ],
+    &quot;country_id&quot; : &quot;3e06c37e-671d-45cb-8f62-7291fabce26e&quot;,
+    &quot;country_name&quot; : &quot;Puerto Rico&quot;,
+    &quot;iso_code&quot; : &quot;PRI&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;510&quot; ],
+    &quot;country_id&quot; : &quot;dea2486b-761d-4c29-9cc4-f1dc0f268b26&quot;,
+    &quot;country_name&quot; : &quot;Indonesia&quot;,
+    &quot;iso_code&quot; : &quot;IDN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;618&quot; ],
+    &quot;country_id&quot; : &quot;63577cb4-f7d2-4989-ba26-92f8092d7581&quot;,
+    &quot;country_name&quot; : &quot;Liberia&quot;,
+    &quot;iso_code&quot; : &quot;LBR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;220&quot; ],
+    &quot;country_id&quot; : &quot;b1406ce2-1b68-49f4-ae3c-f5b01880cc43&quot;,
+    &quot;country_name&quot; : &quot;Serbia&quot;,
+    &quot;iso_code&quot; : &quot;SRB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;222&quot; ],
+    &quot;country_id&quot; : &quot;a080affb-febe-4f0b-b78f-74b44e9b3338&quot;,
+    &quot;country_name&quot; : &quot;Italy&quot;,
+    &quot;iso_code&quot; : &quot;ITA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;626&quot; ],
+    &quot;country_id&quot; : &quot;36b43619-7351-495b-a11e-50b41d7f1b34&quot;,
+    &quot;country_name&quot; : &quot;Sao Tome and Principe&quot;,
+    &quot;iso_code&quot; : &quot;STP&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;548&quot; ],
+    &quot;country_id&quot; : &quot;6026ca67-200f-4277-804d-278b50f9d757&quot;,
+    &quot;country_name&quot; : &quot;Cook Islands&quot;,
+    &quot;iso_code&quot; : &quot;COK&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;708&quot; ],
+    &quot;country_id&quot; : &quot;25d26091-7bd3-4698-83fc-31f680593950&quot;,
+    &quot;country_name&quot; : &quot;Honduras&quot;,
+    &quot;iso_code&quot; : &quot;HND&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;278&quot; ],
+    &quot;country_id&quot; : &quot;1ce5b6b6-facf-4060-897e-b298c1b51ef8&quot;,
+    &quot;country_name&quot; : &quot;Malta&quot;,
+    &quot;iso_code&quot; : &quot;MLT&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;635&quot; ],
+    &quot;country_id&quot; : &quot;d4e62148-2a55-41c0-877c-41f1761959b1&quot;,
+    &quot;country_name&quot; : &quot;Rwanda&quot;,
+    &quot;iso_code&quot; : &quot;RWA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;404&quot;, &quot;405&quot; ],
+    &quot;country_id&quot; : &quot;24b8a214-05ab-4f09-b590-4a986dc9b867&quot;,
+    &quot;country_name&quot; : &quot;India&quot;,
+    &quot;iso_code&quot; : &quot;IND&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;450&quot; ],
+    &quot;country_id&quot; : &quot;3754f68f-def4-40c3-a8b5-291238481557&quot;,
+    &quot;country_name&quot; : &quot;South Korea&quot;,
+    &quot;iso_code&quot; : &quot;KOR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;308&quot; ],
+    &quot;country_id&quot; : &quot;9821ca76-eea0-4b58-a751-4589967914ce&quot;,
+    &quot;country_name&quot; : &quot;Saint Pierre and Miquelon&quot;,
+    &quot;iso_code&quot; : &quot;SPM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;240&quot; ],
+    &quot;country_id&quot; : &quot;4d9f5163-b851-474a-ac81-cec4354a77a0&quot;,
+    &quot;country_name&quot; : &quot;Sweden&quot;,
+    &quot;iso_code&quot; : &quot;SWE&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;621&quot; ],
+    &quot;country_id&quot; : &quot;3b43a29d-3982-429c-a50f-62f44fcdcad4&quot;,
+    &quot;country_name&quot; : &quot;Nigeria&quot;,
+    &quot;iso_code&quot; : &quot;NGA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;746&quot; ],
+    &quot;country_id&quot; : &quot;00a795ff-f0df-4c9e-9318-8e6f4efbba67&quot;,
+    &quot;country_name&quot; : &quot;Suriname&quot;,
+    &quot;iso_code&quot; : &quot;SUR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;244&quot; ],
+    &quot;country_id&quot; : &quot;20bdd47c-d6df-403f-9554-b920d603ba19&quot;,
+    &quot;country_name&quot; : &quot;Finland&quot;,
+    &quot;iso_code&quot; : &quot;FIN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;ROW&quot; ],
+    &quot;country_id&quot; : &quot;46cc56c1-1677-4a11-af53-522ddad7a591&quot;,
+    &quot;country_name&quot; : &quot;Rest of the World&quot;,
+    &quot;iso_code&quot; : &quot;ROW&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;605&quot; ],
+    &quot;country_id&quot; : &quot;69b04202-c47f-4292-964e-a4cfc0a93810&quot;,
+    &quot;country_name&quot; : &quot;Tunisia&quot;,
+    &quot;iso_code&quot; : &quot;TUN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;472&quot; ],
+    &quot;country_id&quot; : &quot;545c5e34-bbaa-4e88-b9a6-46a030d860fa&quot;,
+    &quot;country_name&quot; : &quot;Maldives&quot;,
+    &quot;iso_code&quot; : &quot;MDV&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;234&quot; ],
+    &quot;country_id&quot; : &quot;653f7255-4d58-4018-8918-b732e720365a&quot;,
+    &quot;country_name&quot; : &quot;United Kingdom&quot;,
+    &quot;iso_code&quot; : &quot;GBR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;632&quot; ],
+    &quot;country_id&quot; : &quot;08edda28-91ad-4ff2-9be6-cacd103e33ca&quot;,
+    &quot;country_name&quot; : &quot;Guinea-Bissau&quot;,
+    &quot;iso_code&quot; : &quot;GNB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;736&quot; ],
+    &quot;country_id&quot; : &quot;51f173dd-70e0-4d04-a4b4-7a185e0b21e2&quot;,
+    &quot;country_name&quot; : &quot;Bolivia&quot;,
+    &quot;iso_code&quot; : &quot;BOL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;434&quot; ],
+    &quot;country_id&quot; : &quot;43325787-ef92-485d-bace-834b2c2bced7&quot;,
+    &quot;country_name&quot; : &quot;Uzbekistan&quot;,
+    &quot;iso_code&quot; : &quot;UZB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;221&quot; ],
+    &quot;country_id&quot; : &quot;6dd5732b-424c-4b36-8cf8-13c86b86c319&quot;,
+    &quot;country_name&quot; : &quot;Kosovo&quot;,
+    &quot;iso_code&quot; : &quot;XKX&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;544&quot; ],
+    &quot;country_id&quot; : &quot;22a5d369-1e60-49a6-8767-bb4c1712e058&quot;,
+    &quot;country_name&quot; : &quot;American Samoa&quot;,
+    &quot;iso_code&quot; : &quot;ASM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;528&quot; ],
+    &quot;country_id&quot; : &quot;19b4860c-b7c9-44e2-8887-821540c3764a&quot;,
+    &quot;country_name&quot; : &quot;Brunei&quot;,
+    &quot;iso_code&quot; : &quot;BRN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;606&quot; ],
+    &quot;country_id&quot; : &quot;3c6ba20b-1363-454a-b449-203e9cb0718e&quot;,
+    &quot;country_name&quot; : &quot;Libya&quot;,
+    &quot;iso_code&quot; : &quot;LBY&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;283&quot; ],
+    &quot;country_id&quot; : &quot;c5716834-e24b-4681-b473-cda55e2c3ba9&quot;,
+    &quot;country_name&quot; : &quot;Armenia&quot;,
+    &quot;iso_code&quot; : &quot;ARM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;620&quot; ],
+    &quot;country_id&quot; : &quot;34e1dab6-306b-461a-8267-b80aa92dfd02&quot;,
+    &quot;country_name&quot; : &quot;Ghana&quot;,
+    &quot;iso_code&quot; : &quot;GHA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;603&quot; ],
+    &quot;country_id&quot; : &quot;da654186-e3cf-473e-bf60-75d0fa5f33d0&quot;,
+    &quot;country_name&quot; : &quot;Algeria&quot;,
+    &quot;iso_code&quot; : &quot;DZA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;242&quot; ],
+    &quot;country_id&quot; : &quot;a102c925-caf9-4977-bcd4-e916c3e41b05&quot;,
+    &quot;country_name&quot; : &quot;Norway&quot;,
+    &quot;iso_code&quot; : &quot;NOR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;619&quot; ],
+    &quot;country_id&quot; : &quot;e5de77b9-9ed0-4168-9f27-57588570b792&quot;,
+    &quot;country_name&quot; : &quot;Sierra Leone&quot;,
+    &quot;iso_code&quot; : &quot;SLE&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;539&quot; ],
+    &quot;country_id&quot; : &quot;e5d40823-c7fa-4fdb-bb00-23d01b4ef594&quot;,
+    &quot;country_name&quot; : &quot;Tonga&quot;,
+    &quot;iso_code&quot; : &quot;TON&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;609&quot; ],
+    &quot;country_id&quot; : &quot;7edc7c63-4c12-478c-b6c9-7b5cb2b9143e&quot;,
+    &quot;country_name&quot; : &quot;Mauritania&quot;,
+    &quot;iso_code&quot; : &quot;MRT&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;232&quot; ],
+    &quot;country_id&quot; : &quot;81947a46-8256-4372-bee2-9df4956b6296&quot;,
+    &quot;country_name&quot; : &quot;Austria&quot;,
+    &quot;iso_code&quot; : &quot;AUT&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;274&quot; ],
+    &quot;country_id&quot; : &quot;24cb4725-8da7-4386-abab-c1f1af60ad29&quot;,
+    &quot;country_name&quot; : &quot;Iceland&quot;,
+    &quot;iso_code&quot; : &quot;ISL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;638&quot; ],
+    &quot;country_id&quot; : &quot;27bc1e67-3122-46d9-ae1e-2ec4683b4f4b&quot;,
+    &quot;country_name&quot; : &quot;Djibouti&quot;,
+    &quot;iso_code&quot; : &quot;DJI&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;246&quot; ],
+    &quot;country_id&quot; : &quot;5063dda9-17df-4c77-8c1c-8bae296ff843&quot;,
+    &quot;country_name&quot; : &quot;Lithuania&quot;,
+    &quot;iso_code&quot; : &quot;LTU&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;467&quot; ],
+    &quot;country_id&quot; : &quot;5d5be3a8-7258-4bab-9e94-41fd7bc75150&quot;,
+    &quot;country_name&quot; : &quot;North Korea&quot;,
+    &quot;iso_code&quot; : &quot;PRK&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;219&quot; ],
+    &quot;country_id&quot; : &quot;3f55675a-be92-4077-bb86-3afeaf2721fd&quot;,
+    &quot;country_name&quot; : &quot;Croatia&quot;,
+    &quot;iso_code&quot; : &quot;HRV&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;646&quot; ],
+    &quot;country_id&quot; : &quot;1aa6c12a-5009-4765-b1a1-8b1d6958ab01&quot;,
+    &quot;country_name&quot; : &quot;Madagascar&quot;,
+    &quot;iso_code&quot; : &quot;MDG&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;250&quot; ],
+    &quot;country_id&quot; : &quot;0bf1b8b3-c6de-4961-9590-1ad1f423796b&quot;,
+    &quot;country_name&quot; : &quot;Russian Federation&quot;,
+    &quot;iso_code&quot; : &quot;RUS&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;426&quot; ],
+    &quot;country_id&quot; : &quot;30051d31-8734-4c68-ad2d-bf4db93c8340&quot;,
+    &quot;country_name&quot; : &quot;Bahrain&quot;,
+    &quot;iso_code&quot; : &quot;BHR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;627&quot; ],
+    &quot;country_id&quot; : &quot;e06051a2-b508-4420-887b-49d3f05c333e&quot;,
+    &quot;country_name&quot; : &quot;Equatorial Guinea&quot;,
+    &quot;iso_code&quot; : &quot;GNQ&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;422&quot; ],
+    &quot;country_id&quot; : &quot;7b2b479b-207a-4100-a41d-88b093f94077&quot;,
+    &quot;country_name&quot; : &quot;Oman&quot;,
+    &quot;iso_code&quot; : &quot;OMN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;438&quot; ],
+    &quot;country_id&quot; : &quot;0fb55aad-d983-4aa4-b22e-1d481e613d89&quot;,
+    &quot;country_name&quot; : &quot;Turkmenistan&quot;,
+    &quot;iso_code&quot; : &quot;TKM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;262&quot; ],
+    &quot;country_id&quot; : &quot;2a1c44a2-69bc-4cef-9107-f5e5ec1ea71f&quot;,
+    &quot;country_name&quot; : &quot;Germany&quot;,
+    &quot;iso_code&quot; : &quot;DEU&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;259&quot; ],
+    &quot;country_id&quot; : &quot;f3bda8dc-10ca-4ab5-9706-eb3b6658bddd&quot;,
+    &quot;country_name&quot; : &quot;Moldova&quot;,
+    &quot;iso_code&quot; : &quot;MDA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;363&quot; ],
+    &quot;country_id&quot; : &quot;993dc9f7-9476-4433-94b6-12b6385c5fba&quot;,
+    &quot;country_name&quot; : &quot;Aruba&quot;,
+    &quot;iso_code&quot; : &quot;ABW&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;716&quot; ],
+    &quot;country_id&quot; : &quot;ff63d490-33b0-4870-9ba0-63710ce6fcf4&quot;,
+    &quot;country_name&quot; : &quot;Peru&quot;,
+    &quot;iso_code&quot; : &quot;PER&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;748&quot; ],
+    &quot;country_id&quot; : &quot;a9d5f3ce-b9c5-46e5-a91c-3b954f233cee&quot;,
+    &quot;country_name&quot; : &quot;Uruguay&quot;,
+    &quot;iso_code&quot; : &quot;URY&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;550&quot; ],
+    &quot;country_id&quot; : &quot;c93badc7-1ccb-4a24-93f5-c2a414c1723a&quot;,
+    &quot;country_name&quot; : &quot;Micronesia&quot;,
+    &quot;iso_code&quot; : &quot;FSM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;901&quot; ],
+    &quot;country_id&quot; : &quot;bfdfe694-6124-4fce-b4c8-e129fa40be07&quot;,
+    &quot;country_name&quot; : &quot;International Mobile&quot;,
+    &quot;iso_code&quot; : &quot;INT&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;730&quot; ],
+    &quot;country_id&quot; : &quot;f1904fd4-560d-42ad-b7c4-fee736375761&quot;,
+    &quot;country_name&quot; : &quot;Chile&quot;,
+    &quot;iso_code&quot; : &quot;CHL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;432&quot; ],
+    &quot;country_id&quot; : &quot;03627ab7-c2af-47e9-a7f3-f1a1d5786098&quot;,
+    &quot;country_name&quot; : &quot;Iran&quot;,
+    &quot;iso_code&quot; : &quot;IRN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;702&quot; ],
+    &quot;country_id&quot; : &quot;c48660e0-15f7-49be-bcec-bffd28db8abc&quot;,
+    &quot;country_name&quot; : &quot;Belize&quot;,
+    &quot;iso_code&quot; : &quot;BLZ&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;655&quot; ],
+    &quot;country_id&quot; : &quot;a93fc364-b888-4545-90f2-481d67138c3e&quot;,
+    &quot;country_name&quot; : &quot;South Africa&quot;,
+    &quot;iso_code&quot; : &quot;ZAF&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;710&quot; ],
+    &quot;country_id&quot; : &quot;f9011e5d-12aa-49ba-bed8-3aa86157e2c7&quot;,
+    &quot;country_name&quot; : &quot;Nicaragua&quot;,
+    &quot;iso_code&quot; : &quot;NIC&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;248&quot; ],
+    &quot;country_id&quot; : &quot;481ada03-0236-44e6-9377-580cb4143664&quot;,
+    &quot;country_name&quot; : &quot;Estonia&quot;,
+    &quot;iso_code&quot; : &quot;EST&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;425&quot; ],
+    &quot;country_id&quot; : &quot;dc366218-45fd-4853-90c1-780ab035c66e&quot;,
+    &quot;country_name&quot; : &quot;Israel&quot;,
+    &quot;iso_code&quot; : &quot;ISR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;515&quot; ],
+    &quot;country_id&quot; : &quot;3ff4ba80-b0f6-465f-a393-63bc288a105a&quot;,
+    &quot;country_name&quot; : &quot;Philippines&quot;,
+    &quot;iso_code&quot; : &quot;PHL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;428&quot; ],
+    &quot;country_id&quot; : &quot;946acb41-3279-4f21-b9e0-1cc215ed4b73&quot;,
+    &quot;country_name&quot; : &quot;Mongolia&quot;,
+    &quot;iso_code&quot; : &quot;MNG&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;455&quot; ],
+    &quot;country_id&quot; : &quot;dc0bd420-0d71-4caf-aa0b-be26b193e8aa&quot;,
+    &quot;country_name&quot; : &quot;Macao&quot;,
+    &quot;iso_code&quot; : &quot;MAC&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;212&quot; ],
+    &quot;country_id&quot; : &quot;eaaa0c38-ff21-40c7-a4a2-576ce740e3d0&quot;,
+    &quot;country_name&quot; : &quot;Monaco&quot;,
+    &quot;iso_code&quot; : &quot;MCO&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;346&quot; ],
+    &quot;country_id&quot; : &quot;995b27e9-d01e-4616-93f2-84237f033549&quot;,
+    &quot;country_name&quot; : &quot;Cayman Islands&quot;,
+    &quot;iso_code&quot; : &quot;CYM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;364&quot; ],
+    &quot;country_id&quot; : &quot;84ae5b42-2e01-431c-bad4-d773e7c31988&quot;,
+    &quot;country_name&quot; : &quot;Bahamas&quot;,
+    &quot;iso_code&quot; : &quot;BHS&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;226&quot; ],
+    &quot;country_id&quot; : &quot;d95b8621-9d5a-4c30-9b74-0a848ec547d2&quot;,
+    &quot;country_name&quot; : &quot;Romania&quot;,
+    &quot;iso_code&quot; : &quot;ROU&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;549&quot; ],
+    &quot;country_id&quot; : &quot;d2c01e39-f0fc-4dd4-9e5b-413f0d5643a5&quot;,
+    &quot;country_name&quot; : &quot;Samoa&quot;,
+    &quot;iso_code&quot; : &quot;WSM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;542&quot; ],
+    &quot;country_id&quot; : &quot;7a6bd67f-7fca-4267-bb71-168571d7f845&quot;,
+    &quot;country_name&quot; : &quot;Fiji&quot;,
+    &quot;iso_code&quot; : &quot;FJI&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;334&quot; ],
+    &quot;country_id&quot; : &quot;3acbae78-7fed-45e8-bb46-1a280712522f&quot;,
+    &quot;country_name&quot; : &quot;Mexico&quot;,
+    &quot;iso_code&quot; : &quot;MEX&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;360&quot; ],
+    &quot;country_id&quot; : &quot;bc930606-68e0-4db8-9873-3c85aed0bdcf&quot;,
+    &quot;country_name&quot; : &quot;Saint Vincent and the Grenadines&quot;,
+    &quot;iso_code&quot; : &quot;VCT&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;616&quot; ],
+    &quot;country_id&quot; : &quot;e2b70996-f9de-460b-9254-2c4a3de4c99d&quot;,
+    &quot;country_name&quot; : &quot;Benin&quot;,
+    &quot;iso_code&quot; : &quot;BEN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;340&quot; ],
+    &quot;country_id&quot; : &quot;7f1d1a9b-a2b7-47e2-b3e5-5cadef9fe94b&quot;,
+    &quot;country_name&quot; : &quot;Guadeloupe - Martinique - French Guiana&quot;,
+    &quot;iso_code&quot; : &quot;GLP-MTQ-GUF&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;547&quot; ],
+    &quot;country_id&quot; : &quot;04053f09-1e86-47b2-9d67-5c5851f94842&quot;,
+    &quot;country_name&quot; : &quot;French Polynesia&quot;,
+    &quot;iso_code&quot; : &quot;PYF&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;260&quot; ],
+    &quot;country_id&quot; : &quot;af1102bd-6fa7-4da8-8ba5-5fef91738a59&quot;,
+    &quot;country_name&quot; : &quot;Poland&quot;,
+    &quot;iso_code&quot; : &quot;POL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;460&quot; ],
+    &quot;country_id&quot; : &quot;1535a2f4-ead8-4d75-972b-57f03057cb6a&quot;,
+    &quot;country_name&quot; : &quot;China&quot;,
+    &quot;iso_code&quot; : &quot;CHN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;293&quot; ],
+    &quot;country_id&quot; : &quot;e9d637a9-34ef-4def-89ba-7fecc381004e&quot;,
+    &quot;country_name&quot; : &quot;Slovenia&quot;,
+    &quot;iso_code&quot; : &quot;SVN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;416&quot; ],
+    &quot;country_id&quot; : &quot;3ffaa852-5003-4974-8502-19e15d27a92e&quot;,
+    &quot;country_name&quot; : &quot;Jordan&quot;,
+    &quot;iso_code&quot; : &quot;JOR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;294&quot; ],
+    &quot;country_id&quot; : &quot;181a9aad-d9fa-45be-8cd6-a4bd3ed54ed9&quot;,
+    &quot;country_name&quot; : &quot;Macedonia (FYROM)&quot;,
+    &quot;iso_code&quot; : &quot;MKD&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;410&quot; ],
+    &quot;country_id&quot; : &quot;cafc2adf-d089-4553-a028-e0be40bd511e&quot;,
+    &quot;country_name&quot; : &quot;Pakistan&quot;,
+    &quot;iso_code&quot; : &quot;PAK&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;541&quot; ],
+    &quot;country_id&quot; : &quot;d0e0e919-f6a8-48c6-8efb-c99c4921787c&quot;,
+    &quot;country_name&quot; : &quot;Vanuatu&quot;,
+    &quot;iso_code&quot; : &quot;VUT&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;454&quot; ],
+    &quot;country_id&quot; : &quot;656f3cb0-9f82-44a8-add5-ea6800d50932&quot;,
+    &quot;country_name&quot; : &quot;Hong Kong&quot;,
+    &quot;iso_code&quot; : &quot;HKG&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;540&quot; ],
+    &quot;country_id&quot; : &quot;edd0b200-8241-4fb6-8677-9974ac9a8bb2&quot;,
+    &quot;country_name&quot; : &quot;Solomon Islands&quot;,
+    &quot;iso_code&quot; : &quot;SLB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;738&quot; ],
+    &quot;country_id&quot; : &quot;6e3d0044-1ea2-442b-8edc-d3f51b146a3a&quot;,
+    &quot;country_name&quot; : &quot;Guyana&quot;,
+    &quot;iso_code&quot; : &quot;GUY&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;546&quot; ],
+    &quot;country_id&quot; : &quot;dd12244d-6e2d-4b35-b36d-3d1770b8130c&quot;,
+    &quot;country_name&quot; : &quot;New Caledonia&quot;,
+    &quot;iso_code&quot; : &quot;NCL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;502&quot; ],
+    &quot;country_id&quot; : &quot;b97976a4-23ce-49d9-adf8-e03ba410c023&quot;,
+    &quot;country_name&quot; : &quot;Malaysia&quot;,
+    &quot;iso_code&quot; : &quot;MYS&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;649&quot; ],
+    &quot;country_id&quot; : &quot;c4c9b466-2cf8-4fda-b052-6dcb07ed6229&quot;,
+    &quot;country_name&quot; : &quot;Namibia&quot;,
+    &quot;iso_code&quot; : &quot;NAM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;270&quot; ],
+    &quot;country_id&quot; : &quot;f7d93efc-9bb9-4b24-a7d7-3125b966b0d6&quot;,
+    &quot;country_name&quot; : &quot;Luxembourg&quot;,
+    &quot;iso_code&quot; : &quot;LUX&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;284&quot; ],
+    &quot;country_id&quot; : &quot;d716a283-e5b3-4caa-8441-1bbe2444f898&quot;,
+    &quot;country_name&quot; : &quot;Bulgaria&quot;,
+    &quot;iso_code&quot; : &quot;BGR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;418&quot; ],
+    &quot;country_id&quot; : &quot;6904ec9e-40f7-45eb-8658-619c2bb715af&quot;,
+    &quot;country_name&quot; : &quot;Iraq&quot;,
+    &quot;iso_code&quot; : &quot;IRQ&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;280&quot; ],
+    &quot;country_id&quot; : &quot;176a85ea-67c1-4b0d-a98e-be1a1f6d88df&quot;,
+    &quot;country_name&quot; : &quot;Cyprus&quot;,
+    &quot;iso_code&quot; : &quot;CYP&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;350&quot; ],
+    &quot;country_id&quot; : &quot;5a0dceb0-2799-44bf-bab2-96b4b239215b&quot;,
+    &quot;country_name&quot; : &quot;Bermuda&quot;,
+    &quot;iso_code&quot; : &quot;BMU&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;216&quot; ],
+    &quot;country_id&quot; : &quot;a6c94975-7d26-464b-88af-a7f0e137b29a&quot;,
+    &quot;country_name&quot; : &quot;Hungary&quot;,
+    &quot;iso_code&quot; : &quot;HUN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;417&quot; ],
+    &quot;country_id&quot; : &quot;80621324-5bc4-48f2-b345-d6c108676552&quot;,
+    &quot;country_name&quot; : &quot;Syria&quot;,
+    &quot;iso_code&quot; : &quot;SYR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;204&quot; ],
+    &quot;country_id&quot; : &quot;b6562833-5970-4757-8e38-76d0023d8f6a&quot;,
+    &quot;country_name&quot; : &quot;Netherlands&quot;,
+    &quot;iso_code&quot; : &quot;NLD&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;610&quot; ],
+    &quot;country_id&quot; : &quot;6687100e-f3d5-443c-b7dd-81e58113a10e&quot;,
+    &quot;country_name&quot; : &quot;Mali&quot;,
+    &quot;iso_code&quot; : &quot;MLI&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;628&quot; ],
+    &quot;country_id&quot; : &quot;9d05bc21-ad9f-4d1a-b366-ad03db3b390c&quot;,
+    &quot;country_name&quot; : &quot;Gabon&quot;,
+    &quot;iso_code&quot; : &quot;GAB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;604&quot; ],
+    &quot;country_id&quot; : &quot;ec5d092b-9349-4abc-a417-fe553c58f9d7&quot;,
+    &quot;country_name&quot; : &quot;Morocco&quot;,
+    &quot;iso_code&quot; : &quot;MAR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;266&quot; ],
+    &quot;country_id&quot; : &quot;a00667c0-8824-4041-896c-534b32ce0706&quot;,
+    &quot;country_name&quot; : &quot;Gibraltar&quot;,
+    &quot;iso_code&quot; : &quot;GIB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;624&quot; ],
+    &quot;country_id&quot; : &quot;5e3ada72-bc98-4621-b0ad-11329bf210e1&quot;,
+    &quot;country_name&quot; : &quot;Cameroon&quot;,
+    &quot;iso_code&quot; : &quot;CMR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;255&quot; ],
+    &quot;country_id&quot; : &quot;c9b9af26-ca8d-4af9-8a13-15369c3e49cb&quot;,
+    &quot;country_name&quot; : &quot;Ukraine&quot;,
+    &quot;iso_code&quot; : &quot;UKR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;429&quot; ],
+    &quot;country_id&quot; : &quot;b878ae81-2273-4faf-9843-f5089cdb9c6c&quot;,
+    &quot;country_name&quot; : &quot;Nepal&quot;,
+    &quot;iso_code&quot; : &quot;NPL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;289&quot; ],
+    &quot;country_id&quot; : &quot;56a78d0f-759c-44d4-b588-c3557a1c779e&quot;,
+    &quot;country_name&quot; : &quot;Abkhazia&quot;,
+    &quot;iso_code&quot; : &quot;ABK&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;374&quot; ],
+    &quot;country_id&quot; : &quot;ab273e42-d99a-42e3-9030-9179775a565a&quot;,
+    &quot;country_name&quot; : &quot;Trinidad and Tobago&quot;,
+    &quot;iso_code&quot; : &quot;TTO&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;750&quot; ],
+    &quot;country_id&quot; : &quot;11dcc1f3-6e9c-41ae-a13a-db9d4dbc66d7&quot;,
+    &quot;country_name&quot; : &quot;Falkland Islands&quot;,
+    &quot;iso_code&quot; : &quot;FLK&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;642&quot; ],
+    &quot;country_id&quot; : &quot;b581c186-abf2-4092-bb06-412f613b89fa&quot;,
+    &quot;country_name&quot; : &quot;Burundi&quot;,
+    &quot;iso_code&quot; : &quot;BDI&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;634&quot; ],
+    &quot;country_id&quot; : &quot;cf68a3d2-1978-4c50-86ef-442bbe069d62&quot;,
+    &quot;country_name&quot; : &quot;Sudan&quot;,
+    &quot;iso_code&quot; : &quot;SDN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;213&quot; ],
+    &quot;country_id&quot; : &quot;5ccd5472-3c5c-4f9b-a46a-0d56db5f30a2&quot;,
+    &quot;country_name&quot; : &quot;Andorra&quot;,
+    &quot;iso_code&quot; : &quot;AND&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;338&quot; ],
+    &quot;country_id&quot; : &quot;99ec566f-5241-49a7-a4b3-2ef35cc0d9ee&quot;,
+    &quot;country_name&quot; : &quot;Jamaica&quot;,
+    &quot;iso_code&quot; : &quot;JAM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;238&quot; ],
+    &quot;country_id&quot; : &quot;66bd70dd-33cf-4a65-8d8a-49723f34d262&quot;,
+    &quot;country_name&quot; : &quot;Denmark&quot;,
+    &quot;iso_code&quot; : &quot;DNK&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;651&quot; ],
+    &quot;country_id&quot; : &quot;20fab33f-4549-4e7c-8d75-e176ba8ff8b1&quot;,
+    &quot;country_name&quot; : &quot;Lesotho&quot;,
+    &quot;iso_code&quot; : &quot;LSO&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;722&quot; ],
+    &quot;country_id&quot; : &quot;0b683866-5825-4552-b81f-ea3e4096c43c&quot;,
+    &quot;country_name&quot; : &quot;Argentina&quot;,
+    &quot;iso_code&quot; : &quot;ARG&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;551&quot; ],
+    &quot;country_id&quot; : &quot;12e698b6-6f10-4fbc-b142-62a616eb83fc&quot;,
+    &quot;country_name&quot; : &quot;Marshall Islands&quot;,
+    &quot;iso_code&quot; : &quot;MHL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;639&quot; ],
+    &quot;country_id&quot; : &quot;28fc0686-45d4-44ba-b3a7-a21473cca28d&quot;,
+    &quot;country_name&quot; : &quot;Kenya&quot;,
+    &quot;iso_code&quot; : &quot;KEN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;633&quot; ],
+    &quot;country_id&quot; : &quot;f2f5ee6f-597b-4eb2-bef1-48fa7a0b9080&quot;,
+    &quot;country_name&quot; : &quot;Seychelles&quot;,
+    &quot;iso_code&quot; : &quot;SYC&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;613&quot; ],
+    &quot;country_id&quot; : &quot;52cb7760-a50c-4979-94c9-e8a23df211d0&quot;,
+    &quot;country_name&quot; : &quot;Burkina Faso&quot;,
+    &quot;iso_code&quot; : &quot;BFA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;631&quot; ],
+    &quot;country_id&quot; : &quot;5a6e0158-7d64-4b4c-9724-60ebac3d4f30&quot;,
+    &quot;country_name&quot; : &quot;Angola&quot;,
+    &quot;iso_code&quot; : &quot;AGO&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;653&quot; ],
+    &quot;country_id&quot; : &quot;1b1cdfbc-4e55-4f1e-8db7-bdf6f65ada96&quot;,
+    &quot;country_name&quot; : &quot;Swaziland&quot;,
+    &quot;iso_code&quot; : &quot;SWZ&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;257&quot; ],
+    &quot;country_id&quot; : &quot;c7c76a13-563b-4b54-bdbc-93075d22275c&quot;,
+    &quot;country_name&quot; : &quot;Belarus&quot;,
+    &quot;iso_code&quot; : &quot;BLR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;545&quot; ],
+    &quot;country_id&quot; : &quot;640ffc64-5972-4426-ac31-394c65c40f4a&quot;,
+    &quot;country_name&quot; : &quot;Kiribati&quot;,
+    &quot;iso_code&quot; : &quot;KIR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;436&quot; ],
+    &quot;country_id&quot; : &quot;11026f0c-1c7b-445b-8aae-c1ec5b153e45&quot;,
+    &quot;country_name&quot; : &quot;Tajikistan&quot;,
+    &quot;iso_code&quot; : &quot;TJK&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;400&quot; ],
+    &quot;country_id&quot; : &quot;a527276d-8583-4f04-a8ca-1906f2113b64&quot;,
+    &quot;country_name&quot; : &quot;Azerbaijan&quot;,
+    &quot;iso_code&quot; : &quot;AZE&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;356&quot; ],
+    &quot;country_id&quot; : &quot;6e794979-51ac-4b62-b5f5-0774c80267a3&quot;,
+    &quot;country_name&quot; : &quot;Saint Kitts and Nevis&quot;,
+    &quot;iso_code&quot; : &quot;KNA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;292&quot; ],
+    &quot;country_id&quot; : &quot;43765ef2-f304-493e-8e2b-c18894bb8147&quot;,
+    &quot;country_name&quot; : &quot;San Marino&quot;,
+    &quot;iso_code&quot; : &quot;SMR&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;608&quot; ],
+    &quot;country_id&quot; : &quot;33124b6f-9d09-426d-a365-7e29e81abb9f&quot;,
+    &quot;country_name&quot; : &quot;Senegal&quot;,
+    &quot;iso_code&quot; : &quot;SEN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;625&quot; ],
+    &quot;country_id&quot; : &quot;9a12319e-c62b-4594-a839-fdac6bec806c&quot;,
+    &quot;country_name&quot; : &quot;Cape Verde&quot;,
+    &quot;iso_code&quot; : &quot;CPV&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;466&quot; ],
+    &quot;country_id&quot; : &quot;91937e47-e432-422e-bce7-b03d12754064&quot;,
+    &quot;country_name&quot; : &quot;Taiwan&quot;,
+    &quot;iso_code&quot; : &quot;TWN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;342&quot; ],
+    &quot;country_id&quot; : &quot;21fbdc2d-9e55-4551-8bf8-61912205374f&quot;,
+    &quot;country_name&quot; : &quot;Barbados&quot;,
+    &quot;iso_code&quot; : &quot;BRB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;614&quot; ],
+    &quot;country_id&quot; : &quot;1279c120-3524-4683-9030-fb54a0cb8867&quot;,
+    &quot;country_name&quot; : &quot;Niger&quot;,
+    &quot;iso_code&quot; : &quot;NER&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;552&quot; ],
+    &quot;country_id&quot; : &quot;012aa0f5-32e4-4f05-ab75-2f4b845f873b&quot;,
+    &quot;country_name&quot; : &quot;Palau&quot;,
+    &quot;iso_code&quot; : &quot;PLW&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;372&quot; ],
+    &quot;country_id&quot; : &quot;0057c700-dbc6-47f9-a0ea-6432b462bbff&quot;,
+    &quot;country_name&quot; : &quot;Haiti&quot;,
+    &quot;iso_code&quot; : &quot;HTI&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;659&quot; ],
+    &quot;country_id&quot; : &quot;dad46dfb-7f1a-479b-8953-2b318925bbed&quot;,
+    &quot;country_name&quot; : &quot;South Sudan&quot;,
+    &quot;iso_code&quot; : &quot;SSD&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;231&quot; ],
+    &quot;country_id&quot; : &quot;e100972e-97b9-4720-815a-2cf7e152989b&quot;,
+    &quot;country_name&quot; : &quot;Slovakia&quot;,
+    &quot;iso_code&quot; : &quot;SVK&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;650&quot; ],
+    &quot;country_id&quot; : &quot;eeb96836-d6bc-49fc-9069-32ba065f4183&quot;,
+    &quot;country_name&quot; : &quot;Malawi&quot;,
+    &quot;iso_code&quot; : &quot;MWI&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;365&quot; ],
+    &quot;country_id&quot; : &quot;3b2bca19-879f-453b-a686-84c5dc3da8c3&quot;,
+    &quot;country_name&quot; : &quot;Anguilla&quot;,
+    &quot;iso_code&quot; : &quot;AIA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;366&quot; ],
+    &quot;country_id&quot; : &quot;cafb7e49-1765-42b9-bf95-7aeea6fcbec7&quot;,
+    &quot;country_name&quot; : &quot;Dominica&quot;,
+    &quot;iso_code&quot; : &quot;DMA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;724&quot; ],
+    &quot;country_id&quot; : &quot;07e5d36b-5fbe-4aed-a126-7e5c7bbf1a5b&quot;,
+    &quot;country_name&quot; : &quot;Brazil&quot;,
+    &quot;iso_code&quot; : &quot;BRA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;607&quot; ],
+    &quot;country_id&quot; : &quot;5a180dbf-5872-47fe-a4b2-34f702a628d2&quot;,
+    &quot;country_name&quot; : &quot;Gambia&quot;,
+    &quot;iso_code&quot; : &quot;GMB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;206&quot; ],
+    &quot;country_id&quot; : &quot;4337b195-e3df-4615-ad4e-f7556d0c2a63&quot;,
+    &quot;country_name&quot; : &quot;Belgium&quot;,
+    &quot;iso_code&quot; : &quot;BEL&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;744&quot; ],
+    &quot;country_id&quot; : &quot;7035fb3e-5b12-4d32-891a-91c0b5800442&quot;,
+    &quot;country_name&quot; : &quot;Paraguay&quot;,
+    &quot;iso_code&quot; : &quot;PRY&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;228&quot; ],
+    &quot;country_id&quot; : &quot;87c7bf78-2a9c-4e23-9d9b-0bb16e5bb77c&quot;,
+    &quot;country_name&quot; : &quot;Switzerland&quot;,
+    &quot;iso_code&quot; : &quot;CHE&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;630&quot; ],
+    &quot;country_id&quot; : &quot;ad9726b4-70fe-4da6-91af-89b6289c7592&quot;,
+    &quot;country_name&quot; : &quot;DR Congo&quot;,
+    &quot;iso_code&quot; : &quot;COD&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;295&quot; ],
+    &quot;country_id&quot; : &quot;17f9a6ff-150b-4f65-a155-58f1a1c935f4&quot;,
+    &quot;country_name&quot; : &quot;Liechtenstein&quot;,
+    &quot;iso_code&quot; : &quot;LIE&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;348&quot; ],
+    &quot;country_id&quot; : &quot;b43f63aa-7739-4b0f-813c-c962fb296a11&quot;,
+    &quot;country_name&quot; : &quot;British Virgin Islands&quot;,
+    &quot;iso_code&quot; : &quot;VGB&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;637&quot; ],
+    &quot;country_id&quot; : &quot;e3b89048-3d12-4543-9f7c-9df6f6993733&quot;,
+    &quot;country_name&quot; : &quot;Somalia&quot;,
+    &quot;iso_code&quot; : &quot;SOM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;376&quot; ],
+    &quot;country_id&quot; : &quot;b360462b-3fe8-42bb-9808-10eaf404187d&quot;,
+    &quot;country_name&quot; : &quot;Turks and Caicos Islands&quot;,
+    &quot;iso_code&quot; : &quot;TCA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;415&quot; ],
+    &quot;country_id&quot; : &quot;ee57aea9-43ce-4b2b-ba47-250046be8cc7&quot;,
+    &quot;country_name&quot; : &quot;Lebanon&quot;,
+    &quot;iso_code&quot; : &quot;LBN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;640&quot; ],
+    &quot;country_id&quot; : &quot;b244029b-dd54-416c-87e2-03a712f17ea1&quot;,
+    &quot;country_name&quot; : &quot;Tanzania&quot;,
+    &quot;iso_code&quot; : &quot;TZA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;370&quot; ],
+    &quot;country_id&quot; : &quot;0301d684-c080-4d7c-b38d-e80f5ac46f9c&quot;,
+    &quot;country_name&quot; : &quot;Dominican Republic&quot;,
+    &quot;iso_code&quot; : &quot;DOM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;612&quot; ],
+    &quot;country_id&quot; : &quot;89505b7a-7e5f-43a7-bd3f-3b68ccf6befe&quot;,
+    &quot;country_name&quot; : &quot;Ivory Coast&quot;,
+    &quot;iso_code&quot; : &quot;CIV&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;452&quot; ],
+    &quot;country_id&quot; : &quot;10f069bc-ab54-454a-b54e-8b44356506c7&quot;,
+    &quot;country_name&quot; : &quot;Vietnam&quot;,
+    &quot;iso_code&quot; : &quot;VNM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;704&quot; ],
+    &quot;country_id&quot; : &quot;4ded2909-efb5-443f-9fa2-633177fa0cb5&quot;,
+    &quot;country_name&quot; : &quot;Guatemala&quot;,
+    &quot;iso_code&quot; : &quot;GTM&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;536&quot; ],
+    &quot;country_id&quot; : &quot;71f0f179-9895-4b90-b24a-6370b0001a36&quot;,
+    &quot;country_name&quot; : &quot;Nauru&quot;,
+    &quot;iso_code&quot; : &quot;NRU&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;413&quot; ],
+    &quot;country_id&quot; : &quot;1c4c65c8-1a0b-4d45-ad91-dfda469e3338&quot;,
+    &quot;country_name&quot; : &quot;Sri Lanka&quot;,
+    &quot;iso_code&quot; : &quot;LKA&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;611&quot; ],
+    &quot;country_id&quot; : &quot;e6dbe2c2-357a-4d2f-a746-3504b7ea8442&quot;,
+    &quot;country_name&quot; : &quot;Guinea&quot;,
+    &quot;iso_code&quot; : &quot;GIN&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;657&quot; ],
+    &quot;country_id&quot; : &quot;75de62bb-cb6a-4104-8c3a-ac5752547ef9&quot;,
+    &quot;country_name&quot; : &quot;Eritrea&quot;,
+    &quot;iso_code&quot; : &quot;ERI&quot;
+  }, {
+    &quot;mcc&quot; : [ &quot;368&quot; ],
+    &quot;country_id&quot; : &quot;4b54e44c-a1e9-4acb-bf82-85b73f5a7d01&quot;,
+    &quot;country_name&quot; : &quot;Cuba&quot;,
+    &quot;iso_code&quot; : &quot;CUB&quot;
+  } ]
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def apiCountryCount = response.countries.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def countyId = get[0] response.countries[?(@.country_name==&#39;Malta&#39;)].country_id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">59</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dbCount = dbHandler.getRowCount(&quot;country&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1894</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match dbCount.count == apiCountryCount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;destinations/countries/&quot;+countyId+&quot;/networks&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">754</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">17:24:47.824 request:
+2 &gt; GET http://192.168.20.22/api/destinations/countries/1ce5b6b6-facf-4060-897e-b298c1b51ef8/networks
+2 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjkyMDE1ODQsInVzZXJfbmFtZSI6ImFkbWluLnhjaGFuZ2UiLCJqdGkiOiI5NjdiY2FjZi05M2M0LTQ1OTAtYTBjYS1lNTdlMGQ5MTdiNDUiLCJhdXRob3JpdGllcyI6WyJUUkFGRklDX01BTkFHRU1FTlQ6V1JJVEUiLCJEQVNIQk9BUkQ6V1JJVEUiLCJTVVBQTElFUl9DT05ORUNUSU9OOlJFQUQiLCJTVEFUSVNUSUM6UkVBRCIsIkNMSUVOVF9DT05ORUNUSU9OOlJFQUQiLCJST1VURV9USU1FQkFTRURfQ09ORElUSU9OOlJFQUQiLCJTVVBQTElFUl9DT01NSVRNRU5UOlJFQUQiLCJURU1QTEFURV9QUklDRV9NQU5BR0VNRU5UOldSSVRFIiwiUU9TOldSSVRFIiwiU1VQUExJRVJfQ09OTkVDVElPTjpXUklURSIsIlRSQUZGSUNfTUFOQUdFTUVOVF9NRVNTQUdFX0RBVEE6UkVBRCIsIkNBVEVHT1JZOldSSVRFIiwiQ0xJRU5UX1BSSUNFX01BTkFHRU1FTlQ6V1JJVEUiLCJTVVBQTElFUl9ERVRBSUxTOlJFQUQiLCJTVVBQTElFUl9ERVRBSUxTOldSSVRFIiwiQ0xJRU5UX0NPTk5FQ1RJT046V1JJVEUiLCJTVVBQTElFUl9SQVRFOlJFQUQiLCJDTElFTlRfV0FMTEVUOlJFQUQiLCJXSElURUxJU1Q6UkVBRCIsIkNMSUVOVF9ERVRBSUxTOlJFQUQiLCJTVEFUSVNUSUM6V1JJVEUiLCJST1VURV9NQU5BR0VNRU5UOlJFQUQiLCJST1VURV9NQU5BR0VNRU5UOldSSVRFIiwiTENSOldSSVRFIiwiV0hJVEVMSVNUOldSSVRFIiwiVVNFUjpSRUFEIiwiU1VQUExJRVJfQ09NTUlUTUVOVDpXUklURSIsIlNVUFBMSUVSX1JBVEU6V1JJVEUiLCJMQ1I6UkVBRCIsIlZJUlRVQUxfTlVNQkVSU19UUkFGRklDX01BTkFHRU1FTlRfTUVTU0FHRV9EQVRBOldSSVRFIiwiQ0xJRU5UX1dBTExFVDpXUklURSIsIkRBU0hCT0FSRDpSRUFEIiwiU1RBVElTVElDU19SRVBPUlRJTkc6V1JJVEUiLCJTVEFUSVNUSUNTX1JFUE9SVElORzpSRUFEIiwiVFJBRkZJQ19NQU5BR0VNRU5UOlJFQUQiLCJDTElFTlRfREVUQUlMUzpXUklURSIsIlJPVVRFX1RJTUVCQVNFRF9DT05ESVRJT046V1JJVEUiLCJURU1QTEFURV9QUklDRV9NQU5BR0VNRU5UOlJFQUQiLCJWSVJUVUFMX05VTUJFUlNfVFJBRkZJQ19NQU5BR0VNRU5UX01FU1NBR0VfREFUQTpSRUFEIiwiQ0FURUdPUlk6UkVBRCIsIkNMSUVOVF9QUklDRV9NQU5BR0VNRU5UOlJFQUQiLCJVU0VSOldSSVRFIiwiUU9TOlJFQUQiLCJUUkFGRklDX01BTkFHRU1FTlRfTUVTU0FHRV9EQVRBOldSSVRFIl0sImNsaWVudF9pZCI6ImNsaWVudElkIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.iyBFuL3W69o74MsJriN8LzDX1EfV-CCJ3oFb-Izx7vdfJIi3-RKJJpJABAtEF6f-PK-LpPo8fuPNJLGI1XYrqfRXTaZYUbszUl5ihOHCJRcySDYCAFsqJVagpx525V07xpG7B2boIKjJov5f90PWua3V8nN9sdoXcj7-dwAFfPHto622TUQr3VMiHDE64jprSWr9e34DhHED6Ppw8Uj0ij-_qHd2QIAe95SKkZGS_Sp6YIU0kWT8Q9HVfwJwchWdFbItgc8FkiDkDZjxEndeeBLbJ9P4Rj27sl-A40tNrx5-A1VsYvcWEGxw_vMJ841BBjJnIXe4oiepECG9ANP_S4-pjOExZ5opnxW_HZRaX8iCxofYS4nUFRcpvFuRexfUV3F39QLPuhA8L8jpabLGZnzW0q8CCAKm-r2zROZLgk6xTTCj_-ev-Sl_7WqYIowOOx5nfZ18olsK5KVnZy9IuXm1XR9LQgqwRvH1HhECoj6X5KP3Olq-MkjDuuBBHWfFYIvfajWUtyMB-G1NKJx8LpLuEdgqReLRelZjkhUF_gR-mcDwFMnbRfWTBFfXnpBShSyU1qL880q8zCOsyiL8LOIftj5xw6Q2a5RjyAoj56hwZA56QP1XBAeClZJugrw31-MQUqwlI1mxAR_6rntj2OCU1It-CoVdaPmwJVuRKec
+2 &gt; Cookie: SESSION=YWMyODNkYzAtZjdhOC00MTU3LTlhYTQtNDg3MTQ2MTk2OGRm
+2 &gt; Host: 192.168.20.22
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+17:24:48.556 response time in milliseconds: 713
+2 &lt; 200
+2 &lt; x-content-type-options: nosniff
+2 &lt; x-xss-protection: 1; mode=block
+2 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; pragma: no-cache
+2 &lt; expires: 0
+2 &lt; x-frame-options: DENY
+2 &lt; content-type: application/json
+2 &lt; transfer-encoding: chunked
+2 &lt; date: Tue, 17 Aug 2021 11:54:48 GMT
+2 &lt; Set-Cookie: SESSION=MjQ5MjNjNzEtNGQ4Ny00ZTI5LTk0YzItNTczMTkzMGYzNmE2; Domain=192.168.20.22
+{
+  &quot;networks&quot; : [ {
+    &quot;mccmnc&quot; : [ {
+      &quot;mcc&quot; : &quot;278&quot;,
+      &quot;mnc&quot; : &quot;DEF&quot;
+    } ],
+    &quot;network_id&quot; : &quot;59c33bcb-8380-436c-beec-ae43b115b266&quot;,
+    &quot;country_id&quot; : &quot;1ce5b6b6-facf-4060-897e-b298c1b51ef8&quot;,
+    &quot;network_name&quot; : &quot;DEFAULT&quot;
+  }, {
+    &quot;mccmnc&quot; : [ {
+      &quot;mcc&quot; : &quot;278&quot;,
+      &quot;mnc&quot; : &quot;21&quot;
+    } ],
+    &quot;network_id&quot; : &quot;a8f8f34a-e77e-479b-b349-1226ca3801de&quot;,
+    &quot;country_id&quot; : &quot;1ce5b6b6-facf-4060-897e-b298c1b51ef8&quot;,
+    &quot;network_name&quot; : &quot;GO&quot;
+  }, {
+    &quot;mccmnc&quot; : [ {
+      &quot;mcc&quot; : &quot;278&quot;,
+      &quot;mnc&quot; : &quot;77&quot;
+    } ],
+    &quot;network_id&quot; : &quot;3d16f032-5517-466b-8da5-6d0847e22e84&quot;,
+    &quot;country_id&quot; : &quot;1ce5b6b6-facf-4060-897e-b298c1b51ef8&quot;,
+    &quot;network_name&quot; : &quot;Melita&quot;
+  }, {
+    &quot;mccmnc&quot; : [ {
+      &quot;mcc&quot; : &quot;278&quot;,
+      &quot;mnc&quot; : &quot;NAN&quot;
+    } ],
+    &quot;network_id&quot; : &quot;a8f8286d-91f0-437d-ba7d-c6f8e720bef6&quot;,
+    &quot;country_id&quot; : &quot;1ce5b6b6-facf-4060-897e-b298c1b51ef8&quot;,
+    &quot;network_name&quot; : &quot;NON-ASSIGNED-NUMBERS&quot;
+  }, {
+    &quot;mccmnc&quot; : [ {
+      &quot;mcc&quot; : &quot;278&quot;,
+      &quot;mnc&quot; : &quot;01&quot;
+    } ],
+    &quot;network_id&quot; : &quot;709babeb-d62d-4b93-aaaf-a82dda6f97ae&quot;,
+    &quot;country_id&quot; : &quot;1ce5b6b6-facf-4060-897e-b298c1b51ef8&quot;,
+    &quot;network_name&quot; : &quot;Vodafone&quot;
+  } ]
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def apiNetworkCount = response.networks.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dbCount = dbHandler.getRowCount(&quot;network where country_id=&#39;&quot;+countyId+&quot;&#39;&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1408</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match dbCount.count == apiNetworkCount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
