@@ -1,3 +1,4 @@
+automationHaud\AutomationHaudTest.class
 helpers\DbHandler.class
 helpers\RedisHandler.class
 helpers\validatePcap.class

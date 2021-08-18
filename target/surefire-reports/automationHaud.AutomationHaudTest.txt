@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: automationHaud.AutomationHaudTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.479 s - in automationHaud.AutomationHaudTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.741 s - in automationHaud.AutomationHaudTest
