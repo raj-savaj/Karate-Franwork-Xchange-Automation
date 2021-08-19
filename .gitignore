@@ -1,0 +1,37 @@
+# Java
+target/**
+*.jar
+*.war
+*.ear
+*.class
+
+# NPM
+node_modules/**
+
+# Logs
+*.log
+log*
+
+# IDE VSCode
+.vscode
+
+# IDE Jetbrains
+.idea
+
+# IDE Eclipse
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch

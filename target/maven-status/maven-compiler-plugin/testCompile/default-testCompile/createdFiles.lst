@@ -1,7 +1,0 @@
-automationHaud\AutomationHaudTest.class
-helpers\DbHandler.class
-helpers\RedisHandler.class
-helpers\validatePcap.class
-config\configApplication.class
-helpers\validatePcap$1.class
-helpers\validateRoute.class
