@@ -1,3 +1,6 @@
+# Sensitive
+src/test/java/config/global.properties
+
 # Java
 target/**
 *.jar
