@@ -2,7 +2,7 @@ function fn() {
     
   var configApplication = Java.type('config.configApplication');
   
-  var env = karate.env; // get system property 'karate.env'    mvn test -DargLine="-Dkarate.env=e2e"
+  var env = karate.env; // get system property 'karate.env'    vs
   karate.log('karate.env system property was:', env);
 
   if (!env) {

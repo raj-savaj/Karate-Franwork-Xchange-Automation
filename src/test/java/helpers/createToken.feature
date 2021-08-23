@@ -7,5 +7,3 @@ Feature: Create token
         When method post
         Then status 200
         * def accessToken = response.access_token
-        * def data = {}
-        

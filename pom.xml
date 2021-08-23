@@ -13,6 +13,7 @@
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.surefire.version>2.22.2</maven.surefire.version>        
         <karate.version>1.1.0</karate.version>
+        <gatling.plugin.version>3.1.2</gatling.plugin.version>
     </properties>    
 
     <dependencies>     
@@ -23,11 +24,18 @@
             <version>${karate.version}</version>
             <scope>test</scope>
         </dependency>	
+        
+         <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-gatling</artifactId>
+            <version>${karate.version}</version>
+            <scope>test</scope>
+        </dependency>   
 
-        <dependency>
-            <groupId>com.github.javafaker</groupId>
-            <artifactId>javafaker</artifactId>
-            <version>1.0.2</version>
+         <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>5.5.4</version>
         </dependency>
 
         <dependency>
@@ -53,6 +61,7 @@
             <artifactId>jsch</artifactId>
             <version>0.1.55</version>
         </dependency>
+       
     </dependencies>
 
     <repositories>
@@ -106,7 +115,17 @@
                 <configuration>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
-            </plugin>          
+            </plugin>    
+
+            <plugin>
+                <groupId>io.gatling</groupId>
+                <artifactId>gatling-maven-plugin</artifactId>
+                <version>${gatling.plugin.version}</version>
+                <configuration>
+                    <simulationsFolder>src/test/java/automationHaud/performance</simulationsFolder>
+                    <configFolder>src/test/java/automationHaud/performance/data</configFolder>
+                </configuration>
+            </plugin>      
         </plugins>        
     </build>       
     
