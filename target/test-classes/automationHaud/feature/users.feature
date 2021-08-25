@@ -5,7 +5,7 @@ Feature: API Test
         * def tokenResponse = callonce read('classpath:helpers/createToken.feature')
         * def token = tokenResponse.accessToken
 
-    Scenario: get all country and select malta country
+    Scenario: Get all country and select malta country
         Given path 'destinations/countries'
         Given header Authorization = 'Bearer ' + token
         When method get
