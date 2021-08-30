@@ -24,13 +24,6 @@
             <version>${karate.version}</version>
             <scope>test</scope>
         </dependency>	
-        
-         <dependency>
-            <groupId>com.intuit.karate</groupId>
-            <artifactId>karate-gatling</artifactId>
-            <version>${karate.version}</version>
-            <scope>test</scope>
-        </dependency>   
 
          <dependency>
             <groupId>net.masterthought</groupId>
@@ -116,16 +109,7 @@
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
             </plugin>    
-
-            <plugin>
-                <groupId>io.gatling</groupId>
-                <artifactId>gatling-maven-plugin</artifactId>
-                <version>${gatling.plugin.version}</version>
-                <configuration>
-                    <simulationsFolder>src/test/java/automationHaud/performance</simulationsFolder>
-                    <configFolder>src/test/java/automationHaud/performance/data</configFolder>
-                </configuration>
-            </plugin>      
+              
         </plugins>        
     </build>       
     
