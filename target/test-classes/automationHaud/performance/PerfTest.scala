@@ -26,7 +26,7 @@ class PerfTest extends Simulation {
     ).protocols(protocol) */
 
     createHttpIn.inject(
-        constantUsersPerSec(250) during (5 minutes),
+        constantUsersPerSec(150) during (5 minutes),
     ).protocols(protocol)
 
   ).maxDuration(5 minutes)
