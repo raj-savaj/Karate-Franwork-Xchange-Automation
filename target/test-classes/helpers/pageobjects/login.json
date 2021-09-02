@@ -1,0 +1,17 @@
+{
+    "login": {
+      "username": "#root > div.AuthLayout > div.k-card.AuthLayoutContent.AuthLayoutContent--Desktop.k-card-vertical > div > div > div:nth-child(2) > span > label",
+      "submit": "#submitButton"
+    },
+    "leftNav": {
+      "home": "{}Home",
+      "invoices": "{a}Invoices",
+      "transactions": "{^}Transactions"
+    },
+    "transactions": {
+      "addFirst": ".transactions .qwl-secondary-button",
+      "descriptionInput": ".description-cell input",
+      "description": ".description-cell .header5",
+      "amount": ".amount-cell input",
+    }
+  }

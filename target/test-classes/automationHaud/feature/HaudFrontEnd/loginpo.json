@@ -1,0 +1,18 @@
+{
+    "login": {
+      "username": "#root > div.AuthLayout > div.k-card.AuthLayoutContent.AuthLayoutContent--Desktop.k-card-vertical > div > div > div:nth-child(2) > span > label",
+      "password":"#root > div.AuthLayout > div.k-card.AuthLayoutContent.AuthLayoutContent--Desktop.k-card-vertical > div > div > div:nth-child(3) > span > label",
+      "submit": "#root > div.AuthLayout > div.k-card.AuthLayoutContent.AuthLayoutContent--Desktop.k-card-vertical > div > div > div:nth-child(4) > button"
+    },
+    "leftNav": {
+      "home": "{}Home",
+      "invoices": "{a}Invoices",
+      "transactions": "{^}Transactions"
+    },
+    "transactions": {
+      "addFirst": ".transactions .qwl-secondary-button",
+      "descriptionInput": ".description-cell input",
+      "description": ".description-cell .header5",
+      "amount": ".amount-cell input"
+    }
+  }

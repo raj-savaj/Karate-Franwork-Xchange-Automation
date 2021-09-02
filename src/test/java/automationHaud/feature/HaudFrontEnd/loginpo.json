@@ -1,0 +1,6 @@
+{
+    "login": {
+      "username": "#root > div.AuthLayout > div.k-card.AuthLayoutContent.AuthLayoutContent--Desktop.k-card-vertical > div > div > div:nth-child(2) > span > label",
+      "submit": "#submitButton"
+    }
+  }

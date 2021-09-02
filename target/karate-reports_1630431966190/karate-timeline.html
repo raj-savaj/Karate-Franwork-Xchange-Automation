@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-2","id":1},{"content":"pool-1-thread-1","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"automationHaud\/feature\/users[1:8]","start":1630388523361,"end":1630388526626,"title":"automationHaud\/feature\/users[1:8] 11:12:03.361-11:12:06.626 Get all country and select malta country"},{"id":2,"group":2,"content":"automationHaud\/feature\/dataBase[1:9]","start":1630388511814,"end":1630388521938,"title":"automationHaud\/feature\/dataBase[1:9] 11:11:51.814-11:12:01.938 Check the country count"},{"id":3,"group":3,"content":"automationHaud\/feature\/sendSmppSMS[1:14]","start":1630388511815,"end":1630388518331,"title":"automationHaud\/feature\/sendSmppSMS[1:14] 11:11:51.815-11:11:58.331 Create SMPP supplier"},{"id":4,"group":4,"content":"automationHaud\/feature\/sendSmppSMS[2:31]","start":1630388518366,"end":1630388518976,"title":"automationHaud\/feature\/sendSmppSMS[2:31] 11:11:58.366-11:11:58.976 Configure SMPP supplier"},{"id":5,"group":5,"content":"automationHaud\/feature\/sendSmppSMS[3:49]","start":1630388519005,"end":1630388519724,"title":"automationHaud\/feature\/sendSmppSMS[3:49] 11:11:59.005-11:11:59.724 Create SMPP client"},{"id":6,"group":1,"content":"automationHaud\/feature\/sendSmppSMS[4:64]","start":1630388519757,"end":1630388520757,"title":"automationHaud\/feature\/sendSmppSMS[4:64] 11:11:59.757-11:12:00.757 Configure SMPP client"},{"id":7,"group":3,"content":"automationHaud\/feature\/sendSmppSMS[5:84]","start":1630388520763,"end":1630388521286,"title":"automationHaud\/feature\/sendSmppSMS[5:84] 11:12:00.763-11:12:01.286 Connect client"},{"id":8,"group":4,"content":"automationHaud\/feature\/sendSmppSMS[6:89]","start":1630388521291,"end":1630388521865,"title":"automationHaud\/feature\/sendSmppSMS[6:89] 11:12:01.291-11:12:01.865 Create connectionlink to client"},{"id":9,"group":5,"content":"automationHaud\/feature\/sendSmppSMS[7:95]","start":1630388521872,"end":1630388522454,"title":"automationHaud\/feature\/sendSmppSMS[7:95] 11:12:01.872-11:12:02.454 Bind client"},{"id":10,"group":1,"content":"automationHaud\/feature\/sendSmppSMS[8:109]","start":1630388522460,"end":1630388523354,"title":"automationHaud\/feature\/sendSmppSMS[8:109] 11:12:02.460-11:12:03.354 Create message batch"},{"id":11,"group":3,"content":"automationHaud\/feature\/sendSmppSMS[9:115]","start":1630388523379,"end":1630388524010,"title":"automationHaud\/feature\/sendSmppSMS[9:115] 11:12:03.379-11:12:04.010 Add message to batch"},{"id":12,"group":4,"content":"automationHaud\/feature\/sendSmppSMS[10:139]","start":1630388524015,"end":1630388534636,"title":"automationHaud\/feature\/sendSmppSMS[10:139] 11:12:04.015-11:12:14.636 Submit batch"},{"id":13,"group":2,"content":"automationHaud\/feature\/sendSmppSMS[11:156]","start":1630388534641,"end":1630388541866,"title":"automationHaud\/feature\/sendSmppSMS[11:156] 11:12:14.641-11:12:21.866 Validate Submit_sm packet count in pcap file"},{"id":14,"group":5,"content":"automationHaud\/feature\/sendSmppSMS[12:164]","start":1630388541872,"end":1630388548212,"title":"automationHaud\/feature\/sendSmppSMS[12:164] 11:12:21.872-11:12:28.212 Validate DCS, destination_addr and source_addr Value in Submit_sm packet"},{"id":15,"group":1,"content":"automationHaud\/feature\/redis[1:10]","start":1630388511816,"end":1630388512549,"title":"automationHaud\/feature\/redis[1:10] 11:11:51.816-11:11:52.549 Validate Route, Network and country through Redis","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

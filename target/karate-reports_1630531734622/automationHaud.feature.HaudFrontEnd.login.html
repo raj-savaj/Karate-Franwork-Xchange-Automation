@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>automationHaud.feature.HaudFrontEnd.login</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-09-02 02:57:31 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Validate Login module</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">automationHaud/feature/HaudFrontEnd/login.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validate Login Functionality</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Validate Login module</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>16512</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>configure driver = { httpConfig: { readTimeout: 120000 } }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">138</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver &#39;http://192.168.20.76/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13259</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">02:57:15.018 type was null, defaulting to &#39;chrome&#39;
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>input(&#39;//*[@id=&quot;root&quot;]/div[1]/div[2]/div/div/div[2]/span/label&quot;]&#39;,&#39;admin.xchange&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">3115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">02:57:31.380 classpath:automationHaud/feature/HaudFrontEnd/login.feature:8
+When input(&#39;//*[@id=&quot;root&quot;]/div[1]/div[2]/div/div/div[2]/span/label&quot;]&#39;,&#39;admin.xchange&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: input(&#39;//*[@id=&quot;root&quot;]/div[1]/div[2]/div/div/div[2]/span/label&quot;]&#39;,&#39;admin.xchange&#39;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js eval failed twice:var e = document.evaluate(&quot;//*[@id=&quot;root&quot;]/div[1]/div[2]/div/div/div[2]/span/label&quot;]&quot;, document, null, 9, null).singleNodeValue; e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}, error: [type: MAP, value: {type=object, subtype=error, className=SyntaxError, description=SyntaxError: missing ) after argument list, objectId=7888103873217307242.1.3}]
+- com.intuit.karate.driver.DevToolsDriver.evalInternal(DevToolsDriver.java:315)
+- com.intuit.karate.driver.DevToolsDriver.eval(DevToolsDriver.java:289)
+- com.intuit.karate.driver.DevToolsDriver.input(DevToolsDriver.java:583)
+- &lt;js&gt;.:anonymous(Unnamed:1)
+
+classpath:automationHaud/feature/HaudFrontEnd/login.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref skipped">9</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>input(&#39;//label[text()=&quot;Password *&quot;]&#39;,&#39;Haudsysops123!&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  <div class="embed" data-parent="0.9"><img src="automationHaud.feature.HaudFrontEnd.login_1_1630531651720.png"/></div>
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
