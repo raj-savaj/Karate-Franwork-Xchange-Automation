@@ -1,6 +1,6 @@
-C:\Automation\AutomationKarate\src\test\java\automationHaud\AutomationHaudTest.java
-C:\Automation\AutomationKarate\src\test\java\helpers\validatePcap.java
-C:\Automation\AutomationKarate\src\test\java\helpers\validateRoute.java
-C:\Automation\AutomationKarate\src\test\java\helpers\RedisHandler.java
-C:\Automation\AutomationKarate\src\test\java\helpers\DbHandler.java
-C:\Automation\AutomationKarate\src\test\java\config\configApplication.java
+C:\Automation\AutomationKaratePerf\src\test\java\config\configApplication.java
+C:\Automation\AutomationKaratePerf\src\test\java\helpers\validatePcap.java
+C:\Automation\AutomationKaratePerf\src\test\java\helpers\validateRoute.java
+C:\Automation\AutomationKaratePerf\src\test\java\automationHaud\AutomationHaudTest.java
+C:\Automation\AutomationKaratePerf\src\test\java\helpers\DbHandler.java
+C:\Automation\AutomationKaratePerf\src\test\java\helpers\RedisHandler.java

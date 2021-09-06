@@ -1,0 +1,11 @@
+23:37:49.945 [GatlingSystem-akka.actor.default-dispatcher-24] ERROR com.intuit.karate - classpath:automationHaud/performance/httpin.feature:11
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 993, url: http://192.168.20.23:8065/v2/sms, response: 
+{
+  "request_id" : "0b6e0589-6438-4bce-8abe-cfecd11490b3",
+  "result" : {
+    "status" : "failed",
+    "reason" : "IP Address is not allowed"
+  }
+}
+classpath:automationHaud/performance/httpin.feature:11

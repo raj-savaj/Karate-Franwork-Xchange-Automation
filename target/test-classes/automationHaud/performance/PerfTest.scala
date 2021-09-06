@@ -19,6 +19,7 @@ class PerfTest extends Simulation {
   val createHttpIn = scenario("Send Message Using HttpIn").exec(karateFeature("classpath:automationHaud/performance/httpin.feature"))
   
   setUp(
+
     /* createCategory.inject(
         atOnceUsers(1),
         nothingFor(4.seconds),
@@ -26,9 +27,9 @@ class PerfTest extends Simulation {
     ).protocols(protocol) */
 
     createHttpIn.inject(
-        constantUsersPerSec(150) during (5 minutes),
+        constantUsersPerSec(500) during (15 seconds),
     ).protocols(protocol)
 
-  ).maxDuration(5 minutes)
+  )
 
 }
